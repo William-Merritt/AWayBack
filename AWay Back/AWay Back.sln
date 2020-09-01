@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.29409.12
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ConsoleUI", "ConsoleUI\ConsoleUI.csproj", "{0379896D-F5A9-4E1B-B48F-34C78E1AC391}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GameWorld", "GameWorld\GameWorld.csproj", "{5BBB4F7D-ED76-4CE5-B0B1-6714315119F7}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{0379896D-F5A9-4E1B-B48F-34C78E1AC391}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0379896D-F5A9-4E1B-B48F-34C78E1AC391}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0379896D-F5A9-4E1B-B48F-34C78E1AC391}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0379896D-F5A9-4E1B-B48F-34C78E1AC391}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5BBB4F7D-ED76-4CE5-B0B1-6714315119F7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5BBB4F7D-ED76-4CE5-B0B1-6714315119F7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5BBB4F7D-ED76-4CE5-B0B1-6714315119F7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5BBB4F7D-ED76-4CE5-B0B1-6714315119F7}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {F90C1436-7F5B-4C11-A9D8-5976580C6943}
+	EndGlobalSection
+EndGlobal
