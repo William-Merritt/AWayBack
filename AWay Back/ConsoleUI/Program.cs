@@ -36,7 +36,7 @@ namespace ConsoleUI
 
                 do
                 {
-                    Console.WriteLine(StandardMessages.DisplayMenu());
+                    Console.Write(StandardMessages.DisplayMenu());
                     //Taking the user's choice and passing it through a switch statement. Using console.readline for the argument. 
                     switch (Console.ReadLine())
                     {
