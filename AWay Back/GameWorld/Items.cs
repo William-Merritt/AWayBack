@@ -19,6 +19,6 @@ namespace GameWorld
 
         public string Quantity { get; set; }
 
-        public string Size { get; set; }
+        public string Size { get; set; }1
     }
 }
