@@ -179,19 +179,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\SlippNnott\\.nuget\\packages\\": {}
+    "C:\\Users\\The King\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\Major Wk\\FTCC\\C#\\CSC-253-0001\\Semester Project\\AWay Back\\GameWorld\\GameWorld.csproj",
+      "projectUniqueName": "C:\\Users\\The King\\Documents\\GitHub\\AWayBack\\AWay Back\\GameWorld\\GameWorld.csproj",
       "projectName": "GameWorld",
-      "projectPath": "D:\\Major Wk\\FTCC\\C#\\CSC-253-0001\\Semester Project\\AWay Back\\GameWorld\\GameWorld.csproj",
-      "packagesPath": "C:\\Users\\SlippNnott\\.nuget\\packages\\",
-      "outputPath": "D:\\Major Wk\\FTCC\\C#\\CSC-253-0001\\Semester Project\\AWay Back\\GameWorld\\obj\\",
+      "projectPath": "C:\\Users\\The King\\Documents\\GitHub\\AWayBack\\AWay Back\\GameWorld\\GameWorld.csproj",
+      "packagesPath": "C:\\Users\\The King\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\The King\\Documents\\GitHub\\AWayBack\\AWay Back\\GameWorld\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\SlippNnott\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\The King\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -232,7 +232,7 @@
         ],
         "assetTargetFallback": true,
         "warn": true,
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.300\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.101\\RuntimeIdentifierGraph.json"
       }
     }
   }

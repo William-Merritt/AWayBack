@@ -1,0 +1,8 @@
+C:\Users\The King\Documents\GitHub\AWayBack\AWay Back\GameWorld\obj\Debug\netstandard2.0\GameWorld.csprojAssemblyReference.cache
+C:\Users\The King\Documents\GitHub\AWayBack\AWay Back\GameWorld\obj\Debug\netstandard2.0\GameWorld.AssemblyInfoInputs.cache
+C:\Users\The King\Documents\GitHub\AWayBack\AWay Back\GameWorld\obj\Debug\netstandard2.0\GameWorld.AssemblyInfo.cs
+C:\Users\The King\Documents\GitHub\AWayBack\AWay Back\GameWorld\bin\Debug\netstandard2.0\GameWorld.deps.json
+C:\Users\The King\Documents\GitHub\AWayBack\AWay Back\GameWorld\bin\Debug\netstandard2.0\GameWorld.dll
+C:\Users\The King\Documents\GitHub\AWayBack\AWay Back\GameWorld\bin\Debug\netstandard2.0\GameWorld.pdb
+C:\Users\The King\Documents\GitHub\AWayBack\AWay Back\GameWorld\obj\Debug\netstandard2.0\GameWorld.dll
+C:\Users\The King\Documents\GitHub\AWayBack\AWay Back\GameWorld\obj\Debug\netstandard2.0\GameWorld.pdb
