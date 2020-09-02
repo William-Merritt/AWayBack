@@ -35,12 +35,12 @@ namespace ConsoleUI
                                                      new GameWorld.Mobs("Mimic", "Ugly","Dark", "Slash", 100, "copy")};
 
 
-                Console.WriteLine(StandardMessages.DisplayMenu());
-
                 do
                 {
-                        //Taking the user's choice and passing it through a switch statement. Using console.readline for the argument. 
-                        switch (Console.ReadLine())
+                    Console.WriteLine(StandardMessages.DisplayMenu());
+
+                    //Taking the user's choice and passing it through a switch statement. Using console.readline for the argument. 
+                    switch (Console.ReadLine())
                     {
                         case "1":
                             BuildPlayer.BuildAPlayer(thisPlayer);
