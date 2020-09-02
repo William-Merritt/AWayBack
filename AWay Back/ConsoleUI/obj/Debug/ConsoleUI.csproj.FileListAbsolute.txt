@@ -1,0 +1,9 @@
+C:\Users\The King\Documents\GitHub\AWayBack\AWay Back\ConsoleUI\obj\Debug\ConsoleUI.csprojAssemblyReference.cache
+C:\Users\The King\Documents\GitHub\AWayBack\AWay Back\ConsoleUI\bin\Debug\ConsoleUI.exe.config
+C:\Users\The King\Documents\GitHub\AWayBack\AWay Back\ConsoleUI\bin\Debug\ConsoleUI.exe
+C:\Users\The King\Documents\GitHub\AWayBack\AWay Back\ConsoleUI\bin\Debug\ConsoleUI.pdb
+C:\Users\The King\Documents\GitHub\AWayBack\AWay Back\ConsoleUI\bin\Debug\GameWorld.dll
+C:\Users\The King\Documents\GitHub\AWayBack\AWay Back\ConsoleUI\bin\Debug\GameWorld.pdb
+C:\Users\The King\Documents\GitHub\AWayBack\AWay Back\ConsoleUI\obj\Debug\ConsoleUI.csproj.CopyComplete
+C:\Users\The King\Documents\GitHub\AWayBack\AWay Back\ConsoleUI\obj\Debug\ConsoleUI.exe
+C:\Users\The King\Documents\GitHub\AWayBack\AWay Back\ConsoleUI\obj\Debug\ConsoleUI.pdb

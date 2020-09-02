@@ -7,8 +7,6 @@ namespace GameWorld
     public class Items : Inventory_Item
     {
 
-
-
         public Items(string itemname, string itemdescription, string size, string quantity, int price)
             : base(itemname, itemdescription, price)
         {
@@ -19,6 +17,6 @@ namespace GameWorld
 
         public string Quantity { get; set; }
 
-        public string Size { get; set; }1
+        public string Size { get; set; }
     }
 }

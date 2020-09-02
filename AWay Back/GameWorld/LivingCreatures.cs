@@ -4,27 +4,31 @@ using System.Text;
 
 namespace GameWorld
 {
-    public class LivingCreatures
+    public class LivingCreature
     {
-        private int _health;
-        private string _name;
+        // Fields
 
-        public LivingCreatures()
+        // Constructor
+        public LivingCreature()
         {
+            FirstName = "";
+            LastName = "";
             Health = 0;
-
-            Name = " ";
-
+            Race = "";
         }
-
-        public LivingCreatures(int health, string name)
+        public LivingCreature(string firstName, string lastName, int health, string race)
         {
+            FirstName = firstName;
+            LastName = lastName;
             Health = health;
-            Name = name;
+            Race = race;
         }
 
+        // Properties
+        public string FirstName { get; set; }
+        public string LastName { get; set; }
         public int Health { get; set; }
 
-        public string Name { get; set; }
+        public string Race { get; set; }
     }
 }

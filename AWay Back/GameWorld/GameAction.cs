@@ -10,7 +10,7 @@ namespace GameWorld
        * Creating the Second iteration of the Text Adventure Project
        */
 
-        public static void MoveNorth(Room[] rooms, ref int index)
+        public static void MoveNorth(Rooms[] rooms, ref int index)
         {
             if (index < rooms.Length)//Creating an if statement to consider out of bounds error. 
             {
@@ -28,7 +28,7 @@ namespace GameWorld
 
         }
 
-        public static void MoveSouth(Room[] rooms, ref int index)
+        public static void MoveSouth(Rooms[] rooms, ref int index)
         {
             //Move through the array in reverse and display a previous room each time called.
             if (index > 0)
@@ -43,7 +43,7 @@ namespace GameWorld
 
         }
 
-        public static int Attack(Mob inputMob)
+        public static int Attack(Mobs inputMob)
         {
 
             Console.WriteLine($"Fighting --->{inputMob.FirstName}--{inputMob.LastName}\n" +

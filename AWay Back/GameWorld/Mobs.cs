@@ -4,33 +4,58 @@ using System.Text;
 
 namespace GameWorld
 {
-    public class Mobs : LivingCreatures
+    public class Mobs : LivingCreature
     {
-        //Fields
+        //  Fields
+        //private string _firstName;
+        //private string _lastName;
+        private string _mobType;
+        private string _mobWeakness;
 
-        private string _description;
-        private string _attributes;
 
-
-
-        //constructors
-
-        //custom
-        public Mobs(int health, string name, string description, string attributes) :
-            base(health, name)
+        // Constructors
+        public Mobs()
         {
-
-            Description = description;
-
-            Attributes = attributes;
-
+            FirstName = "";
+            LastName = "";
+            MobType = "";
+            MobWeakness = "";
+            Health = 0;
+            Race = "";
         }
-        //fullproperties
 
+        public Mobs(string firstName, string lastName, string mobType, string mobWeakness, int health, string race) :
+                    base(firstName, lastName, health, race)
+        {
+            MobType = mobType;
+            MobWeakness = mobWeakness;
+        }
 
-        public string Description { get; set; }
+        // Properties
 
-        public string Attributes { get; set; }
+        public string MobType
+        {
+            get
+            {
+                return _mobType;
+            }
+            set
+            {
+                _mobType = value;
+            }
+        }
+
+        public string MobWeakness
+        {
+            get
+            {
+                return _mobWeakness;
+            }
+            set
+            {
+                _mobWeakness = value;
+            }
+        }
 
 
     }

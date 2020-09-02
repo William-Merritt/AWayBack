@@ -45,7 +45,7 @@ namespace GameWorld
                 $"Player Current Health --> {thisPlayer.Health}");
         }
 
-        public static string DisplayCurrentRoom(Room[] room, ref int index)
+        public static string DisplayCurrentRoom(Rooms[] room, ref int index)
         {
             return $"You're currently at the ---> {room[index].RoomName}";
         }
