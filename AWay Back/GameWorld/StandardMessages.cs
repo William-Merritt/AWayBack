@@ -8,7 +8,7 @@ namespace GameWorld
     {
         public static string DisplayMenu()
         {
-            return "1. Create Player\n2. Move North\n3. Move South\n4. Attack Enemy\n5. Exit program";
+            return "1. Create Player\n2. Move North\n3. Move South\n4. Attack Enemy\n5. Exit program\nPlease Enter A Choice: ";
         }
 
         public static string DisplayNumberError()
