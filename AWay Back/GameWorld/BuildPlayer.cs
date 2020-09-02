@@ -19,7 +19,7 @@ namespace GameWorld
             Console.Write("---> ");
             inputPlayer.LastName = Console.ReadLine();
 
-            Console.WriteLine("Please select a class: Swordsman/Lancer/Warrior/Marksman");
+            Console.WriteLine("Please select a class: Marksman, Swordsman, Trapper, Specialist");
             Console.Write("---> ");
             inputPlayer.PlayerClass = Console.ReadLine();
 
