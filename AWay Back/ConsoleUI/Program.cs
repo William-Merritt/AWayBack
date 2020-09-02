@@ -23,11 +23,11 @@ namespace ConsoleUI
                                   new Rooms("StarCraftBack", "", ""),
                                   new Rooms("StarCraftMiddle", "", ""),
                                   new Rooms("StarCraftFront", "", "")};
-
-                string[] Weapons = { "RayGun", "PlasmaRifle", "EnergyBlade", "Grenade" };
-                string[] Potions = { "FullRestore", "QuarterRestore" };
-                string[] Treasure = { "Credits", "Titanium", "Radio Parts" };
-                List<string> Items = new List<string>() { "Map", "DecoyGrenade", "LightAmmo", "HeavyAmmo" };
+            
+                string[] Weapons = { "EnergySword", "PlasmaBow", "ProtonPistol", "DecoyGrenade" };
+                string[] Potions = { "HealthPotion", "StaminaPotion" };
+                string[] Treasure = { "Credits", "Titanium", "Electronic Parts" };
+                List<string> Items = new List<string>() { "Map", "Armor", "Plasma Arrows", "Proton Bullets" };
                 List<Mobs> Mobs = new List<Mobs>() { new Mobs("Ghoul", "Ugly", "Bleed", "Fire", 100, "Undead"),
                                                      new GameWorld.Mobs("BrainEater","Ugly","Confusion","Pierce", 100, "Alien"),
                                                      new GameWorld.Mobs("FaceEater","Ugly","Poison", "Shock", 100, "Worm"),
