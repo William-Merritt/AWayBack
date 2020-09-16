@@ -6,10 +6,26 @@ namespace GameWorld
     {
         public static void BuildAPlayer(Player inputPlayer)
         {
+            string correct = "valid";
+            string password;
+            bool check = false;
+            
+            do
+            {
+                Console.WriteLine(StandardMessages.PromptForPassword());
+                inputPlayer.Password = Console.ReadLine();
+                password = PasswordCheck.CheckPassword(inputPlayer.Password);
+                if (password == correct)
+                {
+                    Console.WriteLine("Password is valid\n");
+                    check = true;
+                }
+                else
+                {
+                    Console.WriteLine("Password is invalid. Try again.\n");
+                }
+            } while (check == false);
 
-            Console.WriteLine("Please create a password for your player");
-            Console.Write("---> ");
-            inputPlayer.Password = Console.ReadLine();
 
             Console.WriteLine("What is the first name of your player?");
             Console.Write("---> ");
