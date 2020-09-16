@@ -49,5 +49,14 @@ namespace GameWorld
         {
             return $"You're currently at the ---> {room[index].RoomName}";
         }
+
+        public static string PromptForPassword()
+        {
+            return "Password Requirements: Length must be between 8 to 15 characters.\n" +
+                    "Must Contain at least one Capital Letter\n" +
+                    "Must Contain at least one Lowercase Letter\n" +
+                    "Must Contain at least one Punctuation Mark\n" +
+                    "Please create a password for the player: ";
+        }
     }
 }
