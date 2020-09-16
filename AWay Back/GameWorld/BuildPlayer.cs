@@ -27,19 +27,19 @@ namespace GameWorld
             Console.Write("---> ");
             inputPlayer.Race = Console.ReadLine();
 
-            if (inputPlayer.Race == "Human")
+            if (inputPlayer.Race == "Human" || inputPlayer.Race == "1")
             {
                 inputPlayer.Health = 150;
             }
-            else if (inputPlayer.Race == "Dwarf")
+            else if (inputPlayer.Race == "Dwarf" || inputPlayer.Race == "2")
             {
                 inputPlayer.Health = 220;
             }
-            else if (inputPlayer.Race == "Dracokin")
+            else if (inputPlayer.Race == "Dracokin" || inputPlayer.Race == "3")
             {
                 inputPlayer.Health = 300;
             }
-            else
+            else if (inputPlayer.Race == "Elf" || inputPlayer.Race == "4")
             {
                 inputPlayer.Health = 190;
             }
