@@ -66,6 +66,7 @@ namespace ConsoleUI
                             //TODO figure out how to manipulate objects more. Selecting a random mob to appear.
                             GameAction.Attack(Mobs[0]);
                             StandardMessages.CleaningCode();
+                            GameAction.AttackPlayer(thisPlayer);
                             break;
 
                         case "5":

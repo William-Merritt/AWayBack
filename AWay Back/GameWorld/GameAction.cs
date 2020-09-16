@@ -67,5 +67,24 @@ namespace GameWorld
 
         }
 
+        public static int AttackPlayer(Player inputPlayer)
+        {
+            Console.WriteLine($"Fighting --->{inputPlayer.FirstName}--{inputPlayer.LastName}\n" +
+                              $"Boss Current HP is --> {inputPlayer.Health}");
+            Console.WriteLine(" ");
+
+            Random rand = new Random();
+            int combat = rand.Next(20) + 1;
+            Console.WriteLine($"You were hit for {combat} points! ");
+            Console.WriteLine(" ");
+            inputPlayer.Health -= combat;
+
+            Console.WriteLine($"Your Current HP is --> {inputPlayer.Health}");
+            Console.WriteLine(" ");
+
+            return inputPlayer.Health;
+
+        }
+
     }
 }
