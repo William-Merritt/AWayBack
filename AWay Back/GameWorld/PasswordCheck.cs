@@ -12,7 +12,7 @@ namespace GameWorld
 
             foreach (char letter in input) 
             {
-                if (char.IsUpper(letter)) 
+                if (char.IsUpper(letter)) //To check for an uppercase letter
                 {
                     capitalLetter++;
                 }
