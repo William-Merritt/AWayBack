@@ -193,6 +193,8 @@ namespace GameWorld
 
         }
 
+        // Need to finish AttackMobs.
+        // Last edit - 09/18/2020
         public static void AttackMobs(string input, Rooms[] rooms, ref int index, Rooms[] rooms2, Mobs inputMob, Player inputPlayer)
         {
             string noun;
