@@ -23,7 +23,13 @@ namespace ConsoleUI
                                   new Rooms("StarCraftBack", "", ""),
                                   new Rooms("StarCraftMiddle", "", ""),
                                   new Rooms("StarCraftFront", "", "")};
-            
+
+                Rooms[] Rooms2 = { new Rooms("LeftCave Side", "", ""),
+                                   new Rooms("LeftSide Cave", "",""),                                     
+                                   new Rooms("Cave Entrance","",""),
+                                   new Rooms("StarCraft RightRoom","",""),
+                                   new Rooms("StarCraft LeftRoom","","")};
+
                 string[] Weapons = { "EnergySword", "PlasmaBow", "ProtonPistol", "DecoyGrenade" };
                 string[] Potions = { "HealthPotion", "StaminaPotion" };
                 string[] Treasure = { "Credits", "Titanium", "Electronic Parts" };
