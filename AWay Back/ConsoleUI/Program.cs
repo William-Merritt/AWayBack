@@ -38,6 +38,9 @@ namespace ConsoleUI
                 {
                     Console.Write(StandardMessages.DisplayMenu());
                     //Taking the user's choice and passing it through a switch statement. Using console.readline for the argument. 
+
+                    GameAction.MovePlayer(Console.ReadLine(), Rooms2, ref index, Rooms);
+
                     switch (Console.ReadLine())
                     {
                         case "1":
