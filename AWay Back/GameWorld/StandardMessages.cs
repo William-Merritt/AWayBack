@@ -50,6 +50,11 @@ namespace GameWorld
             return $"You're currently at the ---> {room[index].RoomName}";
         }
 
+        public static string DisplayCurrentRoom2(Rooms[] room2, ref int index)
+        {
+            return $"You're currently at the ---> {room2[index].RoomName}";
+        }
+
         public static string PromptForPassword()
         {
             return "Password Requirements: Length must be between 8 to 15 characters.\n" +

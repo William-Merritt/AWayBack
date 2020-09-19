@@ -18,17 +18,17 @@ namespace ConsoleUI
                 // Creating the player.
                 Player thisPlayer = new Player();
 
-                Rooms[] Rooms = { new Rooms("PlanentSurface","", ""),
-                                  new Rooms("Cave Entrance", "", ""),
-                                  new Rooms("StarCraftBack", "", ""),
-                                  new Rooms("StarCraftMiddle", "", ""),
-                                  new Rooms("StarCraftFront", "", "")};
+                Rooms[] Rooms = { new Rooms("PlanentSurface","", "Ghoul"),
+                                  new Rooms("Cave Entrance", "", "Ghoul"),
+                                  new Rooms("StarCraftBack", "", "MediumWorm"),
+                                  new Rooms("StarCraftMiddle", "", "FaceEater"),
+                                  new Rooms("StarCraftFront", "", "Mimic")};
 
-                Rooms[] Rooms2 = { new Rooms("LeftCave Side", "", ""),
-                                   new Rooms("LeftSide Cave", "",""),                                     
-                                   new Rooms("Cave Entrance","",""),
-                                   new Rooms("StarCraft RightRoom","",""),
-                                   new Rooms("StarCraft LeftRoom","","")};
+                Rooms[] Rooms2 = { new Rooms("LeftCave Side", "", "Ghoul"),
+                                   new Rooms("LeftSide Cave", "","Mimic"),                                     
+                                   new Rooms("Cave Entrance","","BrainEater"),
+                                   new Rooms("StarCraft RightRoom","","FaceEater"),
+                                   new Rooms("StarCraft LeftRoom","","BrainEater")};
 
                 string[] Weapons = { "EnergySword", "PlasmaBow", "ProtonPistol", "DecoyGrenade" };
                 string[] Potions = { "HealthPotion", "StaminaPotion" };
@@ -45,7 +45,7 @@ namespace ConsoleUI
                     Console.Write(StandardMessages.DisplayMenu());
                     //Taking the user's choice and passing it through a switch statement. Using console.readline for the argument. 
 
-                    GameAction.MovePlayer(Console.ReadLine(), Rooms2, ref index, Rooms);
+                    GameAction.MovePlayer(Console.ReadLine(), Rooms, ref index, Rooms2);
 
                     switch (Console.ReadLine())
                     {
