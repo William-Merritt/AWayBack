@@ -8,7 +8,21 @@ namespace GameWorld
     {
         public static string DisplayMenu()
         {
-            return "1. Create Player\n2. Move North\n3. Move South\n4. Attack Enemy\n5. Exit program\nPlease Enter A Choice: ";
+            return "1. Create Player\n2. Move Player\n3. Attack Enemy\n4. Exit Program\nPlease Enter A Choice: ";
+        }
+
+        public static string PromptForMovement() 
+        {
+            return "Which direction would you like to move in?\n" +
+                "Ex. Please type move north/move west/move south/go east\n" +
+                "Move Player ---> ";
+        }
+
+        public static string PromptForAttack() 
+        {
+            return "Would you like to attack?\n" +
+                "Ex. attack ghoul/attack mimic/attack braineater/attack faceeater/attack mediumworm\n" +
+                "Attack Mob ---> ";
         }
 
         public static string DisplayNumberError()
@@ -45,15 +59,32 @@ namespace GameWorld
                 $"Player Current Health --> {thisPlayer.Health}");
         }
 
-        public static string DisplayCurrentRoom(Rooms[] room, ref int index)
-        {
-            return $"You're currently at the ---> {room[index].RoomName}";
-        }
+        //public static string DisplayCurrentRoom(string input, Rooms[] room, Rooms[] rooms2, ref int index)
+        //{
+        //    string noun;
+        //    string verb;
 
-        public static string DisplayCurrentRoom2(Rooms[] room2, ref int index)
-        {
-            return $"You're currently at the ---> {room2[index].RoomName}";
-        }
+        //    input.Trim();
+            
+        //    string[] tokens = input.Split(null);
+
+        //    noun = tokens[1];
+        //    verb = tokens[0];
+
+        //    if (verb == "move" && noun == "north" || noun == "south")
+        //    {
+        //        return $"Currently in ---> {room[index].RoomName}";
+        //    }
+        //    else if (verb == "move" && noun == "east" || noun == "west")
+        //    {
+
+        //        return $"You're currently at the ---> {rooms2[index].RoomName}";
+        //    }
+        //    else 
+        //    {
+        //        return $"Error! Not a valid direction. Ex. move north.";
+        //    }
+        //}
 
         public static string PromptForPassword()
         {
