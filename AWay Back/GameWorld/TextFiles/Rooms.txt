@@ -1,0 +1,73 @@
+001
+Unknown PlanetSurface
+An unfimiliar planet surface with a big cave entrance.
+1
+2
+-1
+-1
+-1
+002
+Gloomy Cave Entrance
+A Dark cave with a pitch black on the left and a feint glow on the right.
+2
+3
+7
+1
+6
+003
+StarCraft StorageRoom
+The back of a strange spacecraft.
+3
+4
+9
+2
+-1
+004
+StarCraft SleepingQuaters
+4
+5
+8
+3
+9
+005                                               
+StarCraft ControlRoom
+5
+-1
+5
+-1
+-1
+006                                               
+Cave GlowingCorner
+6
+-1
+6
+-1
+-1
+007                                               
+Cave DarkCorner
+7
+-1
+-1
+-1
+7
+008                                                
+StarCraft Bathroom
+8
+-1
+-1
+-1
+4
+009                                                
+StarCraft Kitchen
+9
+-1
+4
+-1
+-1
+010                                                
+StarCraft EngineRoom
+10
+-1
+-1
+-1
+5
