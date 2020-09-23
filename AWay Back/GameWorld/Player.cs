@@ -7,11 +7,9 @@ namespace GameWorld
     public class Player : LivingCreature
     {
         // Fields
-
-        //private string _firstName;
-        //private string _lastName;
         private string _password;
         private string _playerClass;
+        private static Rooms _currentRoom;                  //To get the players current location.
 
         public bool IsAuthenticated;
 
@@ -30,6 +28,7 @@ namespace GameWorld
         {
             PlayerClass = playerClass;
             Password = _password;
+            CurrentRoom = IDA.CurrentRoom[0];
         }
 
         //Properties
@@ -57,6 +56,9 @@ namespace GameWorld
                 _playerClass = value;
             }
         }
+
+        // Auto Properties
+        public static Rooms CurrentRoom { get { return _currentRoom; } set { _currentRoom = value; } }
 
 
         //Creating Password Check
