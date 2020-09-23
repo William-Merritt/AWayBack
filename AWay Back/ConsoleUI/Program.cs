@@ -18,18 +18,16 @@ namespace ConsoleUI
                 // Creating the player.
                 Player thisPlayer = new Player();
 
-                Rooms[] Rooms = { new Rooms("PlanentSurface","", "Ghoul"),
-                                  new Rooms("Cave Entrance", "", "Ghoul"),
-                                  new Rooms("StarCraftBack", "", "MediumWorm"),
-                                  new Rooms("StarCraftMiddle", "", "FaceEater"),
-                                  new Rooms("StarCraftFront", "", "Mimic")};
-
-                Rooms[] Rooms2 = { new Rooms("LeftCave Side", "", "Ghoul"),
-                                   new Rooms("LeftSide Cave", "","Mimic"),                                     
-                                   new Rooms("Cave Entrance","","BrainEater"),
-                                   new Rooms("StarCraft RightRoom","","FaceEater"),
-                                   new Rooms("StarCraft LeftRoom","","BrainEater")};
-
+            List<Rooms> Rooms = new List<Rooms>() { new Rooms("Unknown PlanetSurface","", "Ghoul", ""),
+                                                new Rooms("Gloomy Cave Entrance", "", "Ghoul", ""),
+                                                new Rooms("StarCraft StorageRoom", "", "MediumWorm", ""),
+                                                new Rooms("StarCraft SleepingQuaters", "", "FaceEater", ""),
+                                                new Rooms("StarCraft ControlRoom", "", "Mimic", ""),
+                                                new Rooms("Cave GlowingCorner", "", "Ghoul", ""),
+                                                new Rooms("Cave DarkCorner", "","Mimic", ""),
+                                                new Rooms("StarCraft Bathroom","","BrainEater", ""),
+                                                new Rooms("StarCraft Kitchen","","FaceEater", ""),
+                                                new Rooms("StarCraft EngineRoom","","BrainEater", "")};
                 string[] Weapons = { "EnergySword", "PlasmaBow", "ProtonPistol", "DecoyGrenade" };
                 string[] Potions = { "HealthPotion", "StaminaPotion" };
                 string[] Treasure = { "Credits", "Titanium", "Electronic Parts" };
@@ -45,7 +43,7 @@ namespace ConsoleUI
                     Console.Write(StandardMessages.DisplayMenu());
                     //Taking the user's choice and passing it through a switch statement. Using console.readline for the argument. 
 
-                    GameAction.MovePlayer(Console.ReadLine(), Rooms, ref index, Rooms2);
+                    GameAction.MovePlayer(Console.ReadLine(), Rooms, ref index);
 
                     switch (Console.ReadLine())
                     {

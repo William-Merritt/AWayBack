@@ -10,6 +10,7 @@ namespace GameWorld
         //Fields
         private string _roomname;
         private string _description;
+        private string _mobs;
         private string _exits;
 
 
@@ -20,13 +21,17 @@ namespace GameWorld
 
             Description = "";
 
+            Mobs = "";
+
             Exits = "";
         }
         //custom
-        public Rooms(string roomname, string description, string exits)
+        public Rooms(string roomname, string description, string mobs, string exits)
         {
             RoomName = roomname;
             Description = description;
+            Mobs = mobs;
+
             Exits = exits;
 
         }
@@ -52,6 +57,17 @@ namespace GameWorld
             set
             {
                 _description = value;
+            }
+        }
+        public string Mobs
+        { 
+            get
+            {
+                return _mobs;
+            }
+            set
+            {
+                _mobs = value;
             }
         }
 
