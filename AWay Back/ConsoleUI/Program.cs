@@ -18,16 +18,6 @@ namespace ConsoleUI
                 // Creating the player.
                 Player thisPlayer = new Player();
 
-            List<Rooms> Rooms = new List<Rooms>() { new Rooms("Unknown PlanetSurface","", "Ghoul", ""),
-                                                new Rooms("Gloomy Cave Entrance", "", "Ghoul", ""),
-                                                new Rooms("StarCraft StorageRoom", "", "MediumWorm", ""),
-                                                new Rooms("StarCraft SleepingQuaters", "", "FaceEater", ""),
-                                                new Rooms("StarCraft ControlRoom", "", "Mimic", ""),
-                                                new Rooms("Cave GlowingCorner", "", "Ghoul", ""),
-                                                new Rooms("Cave DarkCorner", "","Mimic", ""),
-                                                new Rooms("StarCraft Bathroom","","BrainEater", ""),
-                                                new Rooms("StarCraft Kitchen","","FaceEater", ""),
-                                                new Rooms("StarCraft EngineRoom","","BrainEater", "")};
                 string[] Weapons = { "EnergySword", "PlasmaBow", "ProtonPistol", "DecoyGrenade" };
                 string[] Potions = { "HealthPotion", "StaminaPotion" };
                 string[] Treasure = { "Credits", "Titanium", "Electronic Parts" };
@@ -43,7 +33,6 @@ namespace ConsoleUI
                     Console.Write(StandardMessages.DisplayMenu());
                     //Taking the user's choice and passing it through a switch statement. Using console.readline for the argument. 
 
-                    GameAction.MovePlayer(Console.ReadLine(), Rooms, ref index);
 
                     switch (Console.ReadLine())
                     {
@@ -56,27 +45,22 @@ namespace ConsoleUI
                         case "2":
                             //Issues showing rooms. Class looks correct and Array looks correct. 
                             StandardMessages.CleaningCode();
-                            Console.WriteLine(StandardMessages.DisplayCurrentRoom(Rooms, ref index));
-                            GameAction.MoveNorth(Rooms, ref index);
+                            Console.WriteLine(StandardMessages.PromptForMovement());
+                            //Console.WriteLine(StandardMessages.DisplayCurrentRoom(Console.ReadLine(), Rooms, Rooms2, ref index));
+                            GameAction.MovePlayer(Console.ReadLine(), Rooms, ref index, Rooms2);
                             StandardMessages.CleaningCode();
                             break;
 
                         case "3":
                             //Issues showing rooms. Class looks correct and Array looks correct. 
                             StandardMessages.CleaningCode();
-                            Console.WriteLine(StandardMessages.DisplayCurrentRoom(Rooms, ref index));
-                            GameAction.MoveSouth(Rooms, ref index);
+                            Console.WriteLine(StandardMessages.PromptForAttack());
+                            //Console.WriteLine(StandardMessages.DisplayCurrentRoom(Console.ReadLine(), Rooms, Rooms2, ref index));
+                            GameAction.AttackMobs(Console.ReadLine(), Rooms, ref index, Rooms2, Mobs, thisPlayer);
                             StandardMessages.CleaningCode();
                             break;
 
                         case "4":
-                            //TODO figure out how to manipulate objects more. Selecting a random mob to appear.
-                            GameAction.Attack(Mobs[0]);
-                            StandardMessages.CleaningCode();
-                            GameAction.AttackPlayer(thisPlayer);
-                            break;
-
-                        case "5":
                             //Exit the program --> Set the boolean variable to true and display goodbye message. 
                             Console.WriteLine(StandardMessages.DisplayGoodbye());
                             Console.ReadLine();
