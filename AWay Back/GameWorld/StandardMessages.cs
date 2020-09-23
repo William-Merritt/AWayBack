@@ -59,33 +59,6 @@ namespace GameWorld
                 $"Player Current Health --> {thisPlayer.Health}");
         }
 
-        //public static string DisplayCurrentRoom(string input, Rooms[] room, Rooms[] rooms2, ref int index)
-        //{
-        //    string noun;
-        //    string verb;
-
-        //    input.Trim();
-            
-        //    string[] tokens = input.Split(null);
-
-        //    noun = tokens[1];
-        //    verb = tokens[0];
-
-        //    if (verb == "move" && noun == "north" || noun == "south")
-        //    {
-        //        return $"Currently in ---> {room[index].RoomName}";
-        //    }
-        //    else if (verb == "move" && noun == "east" || noun == "west")
-        //    {
-
-        //        return $"You're currently at the ---> {rooms2[index].RoomName}";
-        //    }
-        //    else 
-        //    {
-        //        return $"Error! Not a valid direction. Ex. move north.";
-        //    }
-        //}
-
         public static string PromptForPassword()
         {
             return "Password Requirements: Length must be between 8 to 15 characters.\n" +

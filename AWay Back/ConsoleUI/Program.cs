@@ -18,18 +18,6 @@ namespace ConsoleUI
                 // Creating the player.
                 Player thisPlayer = new Player();
 
-                Rooms[] Rooms = { new Rooms("PlanentSurface","", "ghoul"),
-                                  new Rooms("Cave Entrance", "", "ghoul"),
-                                  new Rooms("StarCraftBack", "", "mediumworm"),
-                                  new Rooms("StarCraftMiddle", "", "faceeater"),
-                                  new Rooms("StarCraftFront", "", "mimic")};
-
-                Rooms[] Rooms2 = { new Rooms("LeftCave Side", "", "ghoul"),
-                                   new Rooms("LeftSide Cave", "","mimic"),                                     
-                                   new Rooms("RightSide Cave","","brainEater"),
-                                   new Rooms("StarCraft RightRoom","","faceeater"),
-                                   new Rooms("StarCraft LeftRoom","","braineater")};
-
                 string[] Weapons = { "EnergySword", "PlasmaBow", "ProtonPistol", "DecoyGrenade" };
                 string[] Potions = { "HealthPotion", "StaminaPotion" };
                 string[] Treasure = { "Credits", "Titanium", "Electronic Parts" };

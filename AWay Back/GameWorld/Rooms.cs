@@ -10,8 +10,11 @@ namespace GameWorld
         //Fields
         private string _roomname;
         private string _description;
-        private string _exits;
-
+        private int _id;                                    //To hold the Room's ID number
+        private int _exitNorth;
+        private int _exitEast;
+        private int _exitSouth;
+        private int _exitWest;
 
         //constructors
         public Rooms()
@@ -19,15 +22,17 @@ namespace GameWorld
             RoomName = "";
 
             Description = "";
-
-            Exits = "";
         }
-        //custom
-        public Rooms(string roomname, string description, string exits)
+        public Rooms(int id, string roomname, string description, int exitN, int exitE, int exitS, int exitW)
         {
             RoomName = roomname;
             Description = description;
-            Exits = exits;
+            ID = id;
+            ExitEast = exitE;
+            ExitNorth = exitN;
+            ExitWest = exitW;
+            ExitSouth = exitS;
+            
 
         }
         //fullproperties
@@ -55,16 +60,14 @@ namespace GameWorld
             }
         }
 
-        public string Exits
-        {
-            get
-            {
-                return _exits;
-            }
-            set
-            {
-                _exits = value;
-            }
-        }
+        public int ID { get { return _id; } set { _id = value; } }
+
+        public int ExitNorth { get { return _exitNorth; } set { _exitNorth = value; } }
+
+        public int ExitEast { get { return _exitEast; } set { _exitEast = value; } }
+
+        public int ExitWest { get { return _exitWest; } set { _exitWest = value; } }
+
+        public int ExitSouth { get { return _exitSouth; } set { _exitSouth = value; } }
     }
 }
