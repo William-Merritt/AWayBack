@@ -32,6 +32,8 @@ namespace GameWorld
                 if (Player.CurrentRoom.ExitNorth != -1)
                 {
                     MovePlayer(IDA.Room[Player.CurrentRoom.ExitNorth]);
+                    DisplayCurrentRoom.CurrentRoom();
+                    Console.ReadLine();
                 }
                 else 
                 {
@@ -43,6 +45,8 @@ namespace GameWorld
                 if (Player.CurrentRoom.ExitEast != -1)
                 {
                     MovePlayer(IDA.Room[Player.CurrentRoom.ExitEast]);
+                    DisplayCurrentRoom.CurrentRoom();
+                    Console.ReadLine();
                 }
                 else
                 {
@@ -54,6 +58,8 @@ namespace GameWorld
                 if (Player.CurrentRoom.ExitSouth != -1)
                 {
                     MovePlayer(IDA.Room[Player.CurrentRoom.ExitSouth]);
+                    DisplayCurrentRoom.CurrentRoom();
+                    Console.ReadLine();
                 }
                 else
                 {
@@ -65,6 +71,8 @@ namespace GameWorld
                 if (Player.CurrentRoom.ExitWest != -1)
                 {
                     MovePlayer(IDA.Room[Player.CurrentRoom.ExitWest]);
+                    DisplayCurrentRoom.CurrentRoom();
+                    Console.ReadLine();
                 }
                 else
                 {

@@ -10,8 +10,7 @@ namespace GameWorld
             string correct = "valid";
             string password;
             string inputString;
-            string firstName;
-            string lastName;
+            string name;
             string playerClass = "";
             string race = "";
             int hp = 0;
@@ -35,13 +34,9 @@ namespace GameWorld
 
 
 
-            Console.WriteLine("What is the first name of your player?");
+            Console.WriteLine("What is your name: ");
             Console.Write("---> ");
-            firstName = Console.ReadLine();
-
-            Console.WriteLine("What is the last name of your player?");
-            Console.Write("---> ");
-            lastName = Console.ReadLine();
+            name = Console.ReadLine();
 
             Console.WriteLine("Please select a class: Marksman/Swordsman/Trapper/Specialist");
             Console.Write("---> ");
@@ -77,7 +72,7 @@ namespace GameWorld
                     hp = 130;    
                 }
             
-            Player._player = new Player(firstName, lastName, playerClass, password, hp, race);
+            Player._player = new Player(name, playerClass, password, hp, race);
         }
     }
 }

@@ -33,9 +33,17 @@ namespace GameWorld
 
         public static void CompleteActions(string verb, string noun) 
         {
-            if (verb == "go") 
+            if (verb == "go")
             {
                 Movement.PlayerMovement(noun);
+            }
+            else if (verb == "attack")
+            {
+
+            }
+            else 
+            {
+                Console.WriteLine(StandardMessages.DisplayNumberError());
             }
         }
 
