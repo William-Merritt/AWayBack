@@ -2,20 +2,25 @@
 
 namespace GameWorld
 {
-    public class BuildPlayer
+    public static class BuildPlayer
     {
-        public static void BuildAPlayer(Player inputPlayer)
+        public static void BuildAPlayer()
         {
 
             string correct = "valid";
             string password;
+            string inputString;
+            string name;
+            string playerClass = "";
+            string race = "";
+            int hp = 0;
             bool check = false;
 
             do
             {
                 Console.WriteLine(StandardMessages.PromptForPassword());
-                inputPlayer.Password = Console.ReadLine();
-                password = PasswordCheck.CheckPassword(inputPlayer.Password);
+                inputString = Console.ReadLine();
+                password = PasswordCheck.CheckPassword(inputString);
                 if (password == correct)
                 {
                     Console.WriteLine("Password is valid\n");
@@ -29,50 +34,45 @@ namespace GameWorld
 
 
 
-            Console.WriteLine("What is the first name of your player?");
+            Console.WriteLine("What is your name: ");
             Console.Write("---> ");
-            inputPlayer.FirstName = Console.ReadLine();
-
-            Console.WriteLine("What is the last name of your player?");
-            Console.Write("---> ");
-            inputPlayer.LastName = Console.ReadLine();
+            name = Console.ReadLine();
 
             Console.WriteLine("Please select a class: Marksman/Swordsman/Trapper/Specialist");
             Console.Write("---> ");
-            inputPlayer.PlayerClass = Console.ReadLine();
+            playerClass = Console.ReadLine();
 
             Console.WriteLine("Please select a race: Human/Dwarf/Dracokin/Elf");
             Console.Write("---> ");
-            inputPlayer.Race = Console.ReadLine();
+            race = Console.ReadLine();
             
             
-                if (inputPlayer.Race == "Human" || inputPlayer.Race == "1")
+                if (race == "Human" || race == "1")
                 {
-                    inputPlayer.Health = 150;
+                    hp = 150;
                     
                 }
-                else if (inputPlayer.Race == "Dwarf" || inputPlayer.Race == "2")
+                else if (race == "Dwarf" || race == "2")
                 {
-                    inputPlayer.Health = 220;
+                    hp = 220;
                     
                 }
-                else if (inputPlayer.Race == "Dracokin" || inputPlayer.Race == "3")
+                else if (race == "Dracokin" || race == "3")
                 {
-                    inputPlayer.Health = 300;
+                    hp = 300;
                     
                 }
-                else if (inputPlayer.Race == "Elf" || inputPlayer.Race == "4")
+                else if (race == "Elf" || race == "4")
                 {
-                    inputPlayer.Health = 190;
+                    hp = 190;
                     
                 }
                 else
                 {
-                inputPlayer.Health = 130;
-                    
+                    hp = 130;    
                 }
-                
             
+            Player._player = new Player(name, playerClass, password, hp, race);
         }
     }
 }

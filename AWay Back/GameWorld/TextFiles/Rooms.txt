@@ -1,73 +1,70 @@
-001
+101
 Unknown PlanetSurface
-An unfimiliar planet surface with a big cave entrance.
+An unfimiliar planet surface with a big cave entrance
 1
-2
 -1
 -1
 -1
-002
+102
 Gloomy Cave Entrance
-A Dark cave with a pitch black on the left and a feint glow on the right.
+A Dark cave with a pitch black on the left and a feint glow on the right
 2
 3
 7
 1
-6
-003
+103
 StarCraft StorageRoom
-The back of a strange spacecraft.
+The back of a strange spacecraft
 3
 4
 9
 2
--1
-004
+104
 StarCraft SleepingQuaters
+Empty room with many beds
 4
 5
 8
 3
-9
-005                                               
+105                                             
 StarCraft ControlRoom
+Mid section of the fleet controls ship movements
 5
 -1
 5
 -1
--1
-006                                               
+106                                             
 Cave GlowingCorner
+Damp cave... Is that the smell of blood?
 6
 -1
 6
 -1
--1
-007                                               
+107                                          
 Cave DarkCorner
+Middle of the cave.
 7
 -1
 -1
 -1
-7
-008                                                
+108                                               
 StarCraft Bathroom
+Abandoned bathrooms
 8
 -1
 -1
 -1
-4
-009                                                
+109                                               
 StarCraft Kitchen
+Multi-room kicthen lots of food in stock.
 9
 -1
 4
 -1
--1
-010                                                
+110                                             
 StarCraft EngineRoom
+Engine room. Oil may need to be changed.
 10
 -1
 -1
 -1
-5
