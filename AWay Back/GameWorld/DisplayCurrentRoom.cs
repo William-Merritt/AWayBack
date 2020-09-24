@@ -7,7 +7,7 @@ namespace GameWorld
     public static class DisplayCurrentRoom
     {
         public static void CurrentRoom()
-        {
+        { 
             Console.WriteLine("Currently in : {0}", Player.CurrentRoom.RoomName);
 
             if (Player.CurrentRoom.Description != "")
@@ -26,6 +26,8 @@ namespace GameWorld
                 exits.Add("west");
             if (Player.CurrentRoom.ExitNorth != -1)
                 exits.Add("south");
+            if (exits.Count == 1)
+                exit += exit[0] + " ";
             else
             {
                 for (int i = 0; i < exits.Count; i++)

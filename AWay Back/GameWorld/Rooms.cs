@@ -32,8 +32,6 @@ namespace GameWorld
             ExitNorth = exitN;
             ExitWest = exitW;
             ExitSouth = exitS;
-            
-
         }
         //fullproperties
         public string RoomName
