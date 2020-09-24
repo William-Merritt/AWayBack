@@ -9,39 +9,42 @@ namespace GameWorld
         //  Fields
         //private string _firstName;
         //private string _lastName;
-        private string _mobType;
-        private string _mobWeakness;
+        private int _id;                                    // Will hold the id of the mob
+        private string _mobDmgType;                            // Will hold the damage type of the mob
+        private string _mobWeakness;                        // Will hold the weakness of the mob
 
 
         // Constructors
         public Mobs()
         {
-            FirstName = "";
-            LastName = "";
-            MobType = "";
+            Name = "";
+            MobInfo = "";
+            MobDmgType = "";
             MobWeakness = "";
             Health = 0;
             Race = "";
         }
 
-        public Mobs(string firstName, string lastName, string mobType, string mobWeakness, int health, string race) :
-                    base(firstName, lastName, health, race)
+        public Mobs(int id, string name, string mobInfo, string mobDmgType, string mobWeakness, int health, string race) :
+                    base( name, health, race)
         {
-            MobType = mobType;
+            ID = id;
+            MobInfo = mobInfo;
+            MobDmgType = mobDmgType;
             MobWeakness = mobWeakness;
         }
 
         // Properties
 
-        public string MobType
+        public string MobDmgType
         {
             get
             {
-                return _mobType;
+                return _mobDmgType;
             }
             set
             {
-                _mobType = value;
+                _mobDmgType = value;
             }
         }
 
@@ -54,6 +57,30 @@ namespace GameWorld
             set
             {
                 _mobWeakness = value;
+            }
+        }
+
+        public int ID 
+        {
+            get 
+            {
+                return _id;
+            }
+            set 
+            {
+                _id = value;
+            }
+        }
+
+        public string MobInfo 
+        {
+            get 
+            {
+                return _mobInfo;
+            }
+            set 
+            {
+                _mobinfo = value;
             }
         }
 

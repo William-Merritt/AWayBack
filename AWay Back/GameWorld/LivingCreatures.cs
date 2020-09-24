@@ -7,28 +7,30 @@ namespace GameWorld
     public class LivingCreature
     {
         // Fields
+        private string _name;
+        private int _health;
+        private string _race;
 
         // Constructor
         public LivingCreature()
         {
-            FirstName = "";
-            LastName = "";
+            Name = "";
             Health = 0;
             Race = "";
         }
-        public LivingCreature(string firstName, string lastName, int health, string race)
+        public LivingCreature(string name, int health, string race)
         {
-            FirstName = firstName;
-            LastName = lastName;
+            Name = name;
             Health = health;
             Race = race;
         }
 
         // Properties
-        public string FirstName { get; set; }
-        public string LastName { get; set; }
+       
         public int Health { get; set; }
 
         public string Race { get; set; }
+
+        public string Name { get; set; }
     }
 }

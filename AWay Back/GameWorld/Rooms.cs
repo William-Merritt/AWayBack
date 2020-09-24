@@ -15,6 +15,8 @@ namespace GameWorld
         private int _exitEast;
         private int _exitSouth;
         private int _exitWest;
+        private int _mobId;
+        private Mobs _mob;
 
         //constructors
         public Rooms()
@@ -23,7 +25,7 @@ namespace GameWorld
 
             Description = "";
         }
-        public Rooms(int id, string roomname, string description, int exitN, int exitE, int exitS, int exitW)
+        public Rooms(int id, string roomname, string description, int exitN, int exitE, int exitS, int exitW, int mobId)
         {
             RoomName = roomname;
             Description = description;
@@ -32,8 +34,9 @@ namespace GameWorld
             ExitNorth = exitN;
             ExitWest = exitW;
             ExitSouth = exitS;
-            
 
+            // Adding a random monster to the list to use later inside of rooms
+      
         }
         //fullproperties
         public string RoomName
@@ -67,7 +70,14 @@ namespace GameWorld
         public int ExitEast { get { return _exitEast; } set { _exitEast = value; } }
 
         public int ExitWest { get { return _exitWest; } set { _exitWest = value; } }
-
+    
         public int ExitSouth { get { return _exitSouth; } set { _exitSouth = value; } }
+
+        public int MobId { get { return _mobId; } set { _mobId = value; } }
+
+        public Mobs RoomsMob { get { return _mob; } set { _mob = value; } }
+
+        public List<Mobs> RoomMobs = new List<Mobs>();
     }
+
 }

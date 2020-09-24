@@ -1,0 +1,35 @@
+1
+Ghoul
+Ugly monster seen roaming around multiple planets
+Bleed
+Fire
+100
+Undead
+2
+BrainEater
+This monster is known for its physic abilites
+Confusion
+Pierce
+100
+Alien
+3
+FaceEater
+High level worm from the planet Igon. Kill on sight.
+Poison
+Shock
+100
+Worm
+4
+MediumWorm
+Mid level monster can be killed easily with blast
+Trample
+Blast
+100
+Worm
+5
+Mimic
+Monster of unknown origin. Can disgues itself as NPC
+Dark
+Slash
+100
+Copy

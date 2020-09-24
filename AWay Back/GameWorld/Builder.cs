@@ -15,7 +15,7 @@ namespace GameWorld
 
         public static void Build() 
         {
-            using (StreamReader readFile = File.OpenText(@"")) 
+            using (StreamReader readFile = File.OpenText(@"C:\Users\The King\Documents\GitHub\AWayBack\AWay Back\GameWorld\TextFiles\Rooms.txt")) 
             {
                 while (!readFile.EndOfStream) 
                 {
@@ -27,7 +27,23 @@ namespace GameWorld
                     int exitW = int.Parse(readFile.ReadLine());
                     int exitS = int.Parse(readFile.ReadLine());
 
-                    IDA.CurrentRoom.Add(new Rooms(id, roomName, roomDescription, exitN, exitE, exitS, exitW));
+                    IDA.Room.Add(new Rooms(id, roomName, roomDescription, exitN, exitE, exitW, exitS));
+                }
+            }
+
+            using (StreamReader readFile = File.OpenText(@"C:\Users\The King\Documents\GitHub\AWayBack\AWay Back\GameWorld\TextFiles\Mobs.txt")) 
+            {
+                while (!readFile.EndOfStream) 
+                {
+                    int id = int.Parse(readFile.ReadLine());
+                    string name = readFile.ReadLine();
+                    string mobInfo = readFile.ReadLine();
+                    string mobDmgType = readFile.ReadLine();
+                    string mobWeakness = readFile.ReadLine();
+                    int health = int.Parse(readFile.ReadLine());
+                    string mobRace = readFile.ReadLine();
+
+                    IDA.Mob.Add(new Mobs(id, name, mobInfo, mobDmgType, mobWeakness, health, mobRace));
                 }
             }
         }

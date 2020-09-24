@@ -19,58 +19,60 @@ namespace GameWorld
             NewRoom(currentLocation);
         }
 
-        public static void PlayerMovement(string input) 
+        public static void MoveToStart() 
+        {
+            MovePlayer(IDA.Room[0]);
+        }
+
+        public static void PlayerMovement(string noun) 
         {
 
-            string noun;
-            string verb;
-
-
-            input.Trim();
-
-            string[] tokens = input.Split(null);
-
-            noun = tokens[1];
-            verb = tokens[0];
-
-            if(verb == "go" && noun == "north") 
+            if(noun == "north") 
             {
                 if (Player.CurrentRoom.ExitNorth != -1)
                 {
-                    MovePlayer(IDA.CurrentRoom[Player.CurrentRoom.ExitNorth]);
+                    MovePlayer(IDA.Room[Player.CurrentRoom.ExitNorth]);
+                    DisplayCurrentRoom.CurrentRoom();
+                    Console.ReadLine();
                 }
                 else 
                 {
                     moveHere = false;
                 }
             }
-            if (verb == "go" && noun == "east")
+            if (noun == "east")
             {
                 if (Player.CurrentRoom.ExitEast != -1)
                 {
-                    MovePlayer(IDA.CurrentRoom[Player.CurrentRoom.ExitEast]);
+                    MovePlayer(IDA.Room[Player.CurrentRoom.ExitEast]);
+                    DisplayCurrentRoom.CurrentRoom();
+                    Console.ReadLine();
                 }
                 else
                 {
                     moveHere = false;
                 }
             }
-            if (verb == "go" && noun == "south")
+            if (noun == "south")
             {
                 if (Player.CurrentRoom.ExitSouth != -1)
                 {
-                    MovePlayer(IDA.CurrentRoom[Player.CurrentRoom.ExitSouth]);
+                    MovePlayer(IDA.Room[Player.CurrentRoom.ExitSouth]);
+                    DisplayCurrentRoom.CurrentRoom();
+                    Console.ReadLine();
                 }
                 else
                 {
                     moveHere = false;
                 }
             }
-            if (verb == "go" && noun == "west")
+            if (noun == "west")
             {
                 if (Player.CurrentRoom.ExitWest != -1)
                 {
-                    MovePlayer(IDA.CurrentRoom[Player.CurrentRoom.ExitWest]);
+                    MovePlayer(IDA.Room[Player.CurrentRoom.ExitWest]);
+                    DisplayCurrentRoom.CurrentRoom();
+                    Console.ReadLine();
                 }
                 else
                 {
