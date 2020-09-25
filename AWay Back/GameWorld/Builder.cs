@@ -26,8 +26,9 @@ namespace GameWorld
                     int exitE = int.Parse(readFile.ReadLine());
                     int exitW = int.Parse(readFile.ReadLine());
                     int exitS = int.Parse(readFile.ReadLine());
+                    int mobId = int.Parse(readFile.ReadLine());
 
-                    IDA.Room.Add(new Rooms(id, roomName, roomDescription, exitN, exitE, exitW, exitS));
+                    IDA.Room.Add(new Rooms(id, roomName, roomDescription, exitN, exitE, exitW, exitS, mobId));
                 }
             }
 

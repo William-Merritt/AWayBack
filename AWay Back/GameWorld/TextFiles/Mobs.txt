@@ -1,33 +1,33 @@
 1
-Ghoul
+ghoul
 Ugly monster seen roaming around multiple planets
 Bleed
 Fire
 100
 Undead
 2
-BrainEater
+braineater
 This monster is known for its physic abilites
 Confusion
 Pierce
 100
 Alien
 3
-FaceEater
+faceeater
 High level worm from the planet Igon. Kill on sight.
 Poison
 Shock
 100
 Worm
 4
-MediumWorm
+mediumworm
 Mid level monster can be killed easily with blast
 Trample
 Blast
 100
 Worm
 5
-Mimic
+mimic
 Monster of unknown origin. Can disgues itself as NPC
 Dark
 Slash

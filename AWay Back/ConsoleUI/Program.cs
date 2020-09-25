@@ -21,14 +21,8 @@ namespace ConsoleUI
             string[] Potions = { "HealthPotion", "StaminaPotion" };
             string[] Treasure = { "Credits", "Titanium", "Electronic Parts" };
             List<string> Items = new List<string>() { "Map", "Armor", "Plasma Arrows", "Proton Bullets" };
-            List<Mobs> Mobs = new List<Mobs>() { new Mobs("Ghoul", "Ugly", "Bleed", "Fire", 100, "Undead"),
-                                                    new GameWorld.Mobs("BrainEater","Ugly","Confusion","Pierce", 100, "Alien"),
-                                                    new GameWorld.Mobs("FaceEater","Ugly","Poison", "Shock", 100, "Worm"),
-                                                    new GameWorld.Mobs("MediumWorm", "Ugly","Trample", "Blast", 100, "Worm"),
-                                                    new GameWorld.Mobs("Mimic", "Ugly","Dark", "Slash", 100, "copy")};
-
+            
             DisplayCurrentRoom.CurrentRoom();
-
 
             do
             {
@@ -49,16 +43,14 @@ namespace ConsoleUI
                         StandardMessages.CleaningCode();
                         Console.WriteLine(StandardMessages.PromptForMovement());
                         GameAction.PlayerActions(Console.ReadLine(), Player._player);
-                        StandardMessages.CleaningCode();
                         break;
 
                     case "3":
                         //Issues showing rooms. Class looks correct and Array looks correct. 
                         StandardMessages.CleaningCode();
                         Console.WriteLine(StandardMessages.PromptForAttack());
-                        //Console.WriteLine(StandardMessages.DisplayCurrentRoom(Console.ReadLine(), Rooms, Rooms2, ref index));
-                        //GameAction.AttackMobs(Console.ReadLine(), Rooms, ref index, Rooms2, Mobs, thisPlayer);
-                        StandardMessages.CleaningCode();
+                        GameAction.PlayerActions(Console.ReadLine(), Player._player);
+                        Console.ReadLine();
                         break;
 
                     case "4":

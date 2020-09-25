@@ -9,7 +9,9 @@ namespace GameWorld
         //  Fields
         //private string _firstName;
         //private string _lastName;
-        private int _id;                                    // Will hold the id of the mob
+        private int _id;                                        // Will hold the id of the mob
+        private string _name;
+        private string _mobInfo;
         private string _mobDmgType;                            // Will hold the damage type of the mob
         private string _mobWeakness;                        // Will hold the weakness of the mob
 
@@ -26,15 +28,28 @@ namespace GameWorld
         }
 
         public Mobs(int id, string name, string mobInfo, string mobDmgType, string mobWeakness, int health, string race) :
-                    base( name, health, race)
+                    base(health, race)
         {
             ID = id;
+            Name = name;
             MobInfo = mobInfo;
             MobDmgType = mobDmgType;
             MobWeakness = mobWeakness;
         }
 
         // Properties
+
+        public string Name 
+        {
+            get 
+            {
+                return _name;
+            }
+            set 
+            {
+                _name = value;
+            }
+        }
 
         public string MobDmgType
         {
@@ -80,10 +95,22 @@ namespace GameWorld
             }
             set 
             {
-                _mobinfo = value;
+                _mobInfo = value;
             }
         }
 
+
+        // Creating a mob object to be used to interact with player object. 
+        public Mobs(Mobs newMob) : base(newMob.Health, newMob.Race) 
+        {
+            ID = newMob.ID;
+            Name = newMob.Name;
+            MobInfo = newMob.MobInfo;
+            MobDmgType = newMob.MobDmgType;
+            MobWeakness = newMob.MobWeakness;
+            Health = newMob.Health;
+            Race = newMob.Race;
+        }
 
     }
 }

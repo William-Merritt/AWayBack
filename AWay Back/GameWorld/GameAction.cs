@@ -39,7 +39,7 @@ namespace GameWorld
             }
             else if (verb == "attack")
             {
-
+                Battle.CommenceCombat(noun, Player._player);
             }
             else 
             {
@@ -133,37 +133,6 @@ namespace GameWorld
 
         //    if (verb == "attack" && noun == "ghoul" && rooms[index].Exits == "ghoul")
         //    {
-
-        //        Console.WriteLine($"Fighting --->{mobs[0].FirstName}--{mobs[0].LastName}\n" +
-        //                      $"Boss Current HP is --> {mobs[0].Health}");
-
-        //        Console.WriteLine(" ");
-
-        //        Random rand = new Random();
-
-        //        int combat = rand.Next(20) + 1;
-
-        //        Console.WriteLine($"You hit the boss for {combat} points! ");
-        //        Console.WriteLine(" ");
-
-        //        mobs[0].Health -= combat;
-
-        //        Console.WriteLine($"Boss Current HP is --> {mobs[0].Health}");
-        //        Console.WriteLine(" ");
-
-        //        Console.WriteLine($"Fighting --->{inputPlayer.FirstName}--{inputPlayer.LastName}\n" +
-        //                       $"Boss Current HP is --> {inputPlayer.Health}");
-        //        Console.WriteLine(" ");
-
-        //        int combat2 = rand.Next(20) + 1;
-        //        Console.WriteLine($"You were hit for {combat2} points! ");
-        //        Console.WriteLine(" ");
-        //        inputPlayer.Health -= combat2;
-
-        //        Console.WriteLine($"Your Current HP is --> {inputPlayer.Health}");
-        //        Console.WriteLine(" ");
-
-
 
         //    }
         //    else if (verb == "attack" && noun == "braineater" && rooms[index].Exits == "braineater")

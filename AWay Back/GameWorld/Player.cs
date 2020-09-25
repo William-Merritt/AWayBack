@@ -8,6 +8,7 @@ namespace GameWorld
     {
         // Fields
         private string _password;
+        private string _name;
         private string _playerClass;
         private static Rooms _currentRoom;   //To get the players current location.
         public static Player _player;
@@ -23,8 +24,9 @@ namespace GameWorld
             Race = "";
         }
         public Player(string name, string playerClass, string password, int health, string race)
-                        : base(name, health, race)
+                        : base(health, race)
         {
+            Name = name;
             PlayerClass = playerClass;
             Password = _password;
             CurrentRoom = IDA.Room[0];
@@ -43,6 +45,8 @@ namespace GameWorld
                 _password = value;
             }
         }
+
+        public string Name { get { return _name; } set { _name = value; } }
 
         public string PlayerClass
         {

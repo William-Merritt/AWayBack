@@ -52,8 +52,7 @@ namespace GameWorld
 
         public static void DisplayCreatedPlayer(Player thisPlayer)
         {
-            Console.WriteLine($"Player Name -->{thisPlayer.FirstName}\n" +
-                $"Player Last Name --> {thisPlayer.LastName}\n" +
+            Console.WriteLine($"Player Name -->{thisPlayer.Name}\n" +
                 $"Player Class --> {thisPlayer.PlayerClass}\n" +
                 $"Player Race --> {thisPlayer.Race}\n" +
                 $"Player Current Health --> {thisPlayer.Health}");
