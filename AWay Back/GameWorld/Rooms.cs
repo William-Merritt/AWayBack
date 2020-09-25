@@ -36,16 +36,20 @@ namespace GameWorld
             ExitSouth = exitS;
 
             // Adding a random monster to the list to use later inside of rooms
-            if (mobId != 5) 
+            if (mobId != 4)
             {
-                if (mobId > 0) 
+                if (mobId > -1)
                 {
                     Random rand = new Random();
 
-                    int getNewMob = rand.Next(1, 5);
+                    int getNewMob = rand.Next(0, 3);
                     RoomsMob = new Mobs(IDA.Mob[getNewMob]);
                     RoomMobs.Add(RoomsMob);
                 }
+            }
+            else 
+            {
+                RoomMobs.Add(IDA.FindMobID(mobId));
             }
         }
         //fullproperties

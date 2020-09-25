@@ -14,7 +14,7 @@ namespace GameWorld
         public static string PromptForMovement() 
         {
             return "Which direction would you like to move in?\n" +
-                "Ex. Please type move north/move west/move south/go east\n" +
+                "Ex. Please type go north/go west/go south/go east\n" +
                 "Move Player ---> ";
         }
 

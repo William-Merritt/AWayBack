@@ -33,21 +33,14 @@ namespace ConsoleUI
                 switch (Console.ReadLine())
                 {
                     case "1":
-                        //BuildPlayer.BuildAPlayer();
-                        StandardMessages.CleaningCode();
-                        //StandardMessages.DisplayCreatedPlayer();
                         break;
 
                     case "2":
-                        //Issues showing rooms. Class looks correct and Array looks correct. 
-                        StandardMessages.CleaningCode();
                         Console.WriteLine(StandardMessages.PromptForMovement());
                         GameAction.PlayerActions(Console.ReadLine(), Player._player);
                         break;
 
                     case "3":
-                        //Issues showing rooms. Class looks correct and Array looks correct. 
-                        StandardMessages.CleaningCode();
                         Console.WriteLine(StandardMessages.PromptForAttack());
                         GameAction.PlayerActions(Console.ReadLine(), Player._player);
                         Console.ReadLine();
