@@ -38,11 +38,11 @@ namespace GameWorld
             // Adding a random monster to the list to use later inside of rooms
             if (mobId != 4)
             {
-                if (mobId > -1)
+                if (mobId > 1)
                 {
                     Random rand = new Random();
 
-                    int getNewMob = rand.Next(0, 3);
+                    int getNewMob = rand.Next(0, 4);
                     RoomsMob = new Mobs(IDA.Mob[getNewMob]);
                     RoomMobs.Add(RoomsMob);
                 }

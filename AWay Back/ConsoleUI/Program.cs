@@ -43,7 +43,6 @@ namespace ConsoleUI
                     case "3":
                         Console.WriteLine(StandardMessages.PromptForAttack());
                         GameAction.PlayerActions(Console.ReadLine(), Player._player);
-                        Console.ReadLine();
                         break;
 
                     case "4":

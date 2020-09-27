@@ -22,10 +22,10 @@ namespace GameWorld
                 exits.Add("north");
             if (Player.CurrentRoom.ExitEast != -1)
                 exits.Add("east");
-            if (Player.CurrentRoom.ExitWest != -1)
-                exits.Add("west");
             if (Player.CurrentRoom.ExitSouth != -1)
                 exits.Add("south");
+            if (Player.CurrentRoom.ExitWest != -1)
+                exits.Add("west");
             if (exits.Count == 1)
                 exit += exits[0] + " ";
             else
@@ -39,25 +39,6 @@ namespace GameWorld
             }
 
             Console.WriteLine(exit + "]");
-
-            if (Player.CurrentRoom.RoomMobs != null) 
-            {
-                foreach (Mobs mob in Player.CurrentRoom.RoomMobs) 
-                {
-                    if (mob.ID != 5)
-                    {
-                        Player.CurrentMob = mob;
-
-                        Console.WriteLine($"You see a {mob.Name}. Procced with caution");
-                    }
-                    else 
-                    {
-                        Player.CurrentMob = mob;
-
-                        Console.WriteLine($"You see a {mob.Name}. You may want to run.");
-                    }
-                }
-            }
         }
 
 

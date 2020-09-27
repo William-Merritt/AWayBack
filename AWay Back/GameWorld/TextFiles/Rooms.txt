@@ -5,7 +5,7 @@ An unfimiliar planet surface with a big cave entrance
 -1
 -1
 -1
-0
+-1
 102
 Gloomy Cave Entrance
 A Dark cave with a pitch black on the left and a feint glow on the right
@@ -13,7 +13,7 @@ A Dark cave with a pitch black on the left and a feint glow on the right
 3
 0
 1
-1
+-1
 103
 StarCraft StorageRoom
 The back of a strange spacecraft
@@ -21,7 +21,7 @@ The back of a strange spacecraft
 4
 1
 9
-2
+0
 104
 StarCraft SleepingQuaters
 Empty room with many beds
@@ -29,7 +29,7 @@ Empty room with many beds
 5
 2
 3
-3
+-1
 105                                             
 StarCraft ControlRoom
 Mid section of the fleet controls ship movements
@@ -45,7 +45,7 @@ Damp cave... Is that the smell of blood?
 -1
 4
 -1
--1
+0
 107                                          
 Cave DarkCorner
 Middle of the cave.
@@ -53,7 +53,7 @@ Middle of the cave.
 -1
 -1
 5
-4
+0
 108                                               
 StarCraft Bathroom
 Abandoned bathrooms
@@ -77,4 +77,4 @@ Engine room. Oil may need to be changed.
 -1
 8
 -1
-4
+0
