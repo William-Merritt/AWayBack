@@ -1,0 +1,4 @@
+201, Energy Sword, Blade created with future technology
+202, Plasma Bow, Bow created with unique metals
+203, Proton Pistol, Small compact pistol
+204, Decoy Grenade, Explosion creates a doppleganger
