@@ -62,13 +62,13 @@ namespace GameWorld.AdminCenter
                     id = Convert.ToInt32(inputString);
                     if (id > 1 && id <= 100) 
                     {
-                        foreach (Mobs mob in IDA.Mob.ToList())
-                        {
-                            if (mob.ID == id) 
-                            {
-                                Console.WriteLine("Error. A mob already contains that ID.");
-                            }
-                        }
+                        //foreach (Mobs mob in IDA.Mob.ToList())
+                        //{
+                        //    if (mob.ID == id) 
+                        //    {
+                        //        Console.WriteLine("Error. A mob already contains that ID.");
+                        //    }
+                        //}
                     }
                 }
             }

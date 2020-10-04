@@ -15,7 +15,7 @@ namespace GameWorld
 
         public static void Build() 
         {
-            using (StreamReader readFile = File.OpenText(@"C:\Users\The King\Documents\GitHub\AWayBack\AWay Back\GameWorld\TextFiles\Rooms.txt")) 
+            using (StreamReader readFile = File.OpenText(@"../../../GameWorld/TextFiles/Rooms.txt")) 
             {
                 while (!readFile.EndOfStream) 
                 {
@@ -32,7 +32,7 @@ namespace GameWorld
                 }
             }
 
-            using (StreamReader readFile = File.OpenText(@"C:\Users\The King\Documents\GitHub\AWayBack\AWay Back\GameWorld\TextFiles\Mobs.txt")) 
+            using (StreamReader readFile = File.OpenText(@"../../../GameWorld/TextFiles/Mobs.txt")) 
             {
                 while (!readFile.EndOfStream) 
                 {
