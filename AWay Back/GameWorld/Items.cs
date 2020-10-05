@@ -18,7 +18,6 @@ namespace GameWorld
         }
 
         public string Quantity { get; set; }
-
         public string Size { get; set; }
         private int ID { get; set; }
 

@@ -4,7 +4,7 @@ using System.Text;
 using System.IO;
 using System.Linq;
 
-namespace GameWorld.AdminCenter
+namespace GameWorld
 {
     public class Create
     {
@@ -19,6 +19,7 @@ namespace GameWorld.AdminCenter
             switch (inputString.ToLower()) 
             {
                 case "mob":
+                    NewMob();
                     break;
 
                 case "room":
@@ -111,6 +112,10 @@ namespace GameWorld.AdminCenter
                     }
                 }
             }
+        }
+        public static void NewRoom() 
+        {
+            
         }
     }
 }
