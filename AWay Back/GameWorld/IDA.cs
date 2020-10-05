@@ -9,6 +9,10 @@ namespace GameWorld
     {
         public static readonly List<Rooms> Room = new List<Rooms>(); // To hold the new rooms. List cannot be changed. Readonly
         public static readonly List<Mobs> Mob = new List<Mobs>();
+        public static readonly List<Items> Item = new List<Items>();
+        public static readonly List<Potions> Potion = new List<Potions>();
+        public static readonly List<Weapons> Weapon = new List<Weapons>();
+        public static readonly List<Treasure> Treasure = new List<Treasure>();
 
 
 

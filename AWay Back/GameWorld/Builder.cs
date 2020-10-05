@@ -13,11 +13,11 @@ namespace GameWorld
             return lines;
         }
 
-        public static void Build() 
+        public static void Build()
         {
-            using (StreamReader readFile = File.OpenText(@"../../../GameWorld/TextFiles/Rooms.txt")) 
+            using (StreamReader readFile = File.OpenText(@"../../../GameWorld/TextFiles/Rooms.txt"))
             {
-                while (!readFile.EndOfStream) 
+                while (!readFile.EndOfStream)
                 {
                     int id = int.Parse(readFile.ReadLine());
                     string roomName = readFile.ReadLine();
@@ -32,9 +32,9 @@ namespace GameWorld
                 }
             }
 
-            using (StreamReader readFile = File.OpenText(@"../../../GameWorld/TextFiles/Mobs.txt")) 
+            using (StreamReader readFile = File.OpenText(@"../../../GameWorld/TextFiles/Mobs.txt"))
             {
-                while (!readFile.EndOfStream) 
+                while (!readFile.EndOfStream)
                 {
                     int id = int.Parse(readFile.ReadLine());
                     string name = readFile.ReadLine();
@@ -46,6 +46,69 @@ namespace GameWorld
 
                     IDA.Mob.Add(new Mobs(id, name, mobInfo, mobDmgType, mobWeakness, health, mobRace));
                 }
+            }
+
+            using (StreamReader readFile = File.OpenText(@"../../../GameWorld/TextFiles/Items.txt"))
+            {
+                while (!readFile.EndOfStream)
+                {
+                    int id = int.Parse(readFile.ReadLine());
+                    string itemname = readFile.ReadLine();
+                    string itemdescription = readFile.ReadLine();
+                    string size = readFile.ReadLine();
+                    string quantity = readFile.ReadLine();
+                    int price = int.Parse(readFile.ReadLine());
+
+                    IDA.Item.Add(new Items(id,itemname, itemdescription, size, quantity, price));
+
+                }
+            }
+
+            using (StreamReader readFile = File.OpenText(@"../../../GameWorld/TextFiles/Potions.txt"))
+            {
+                while (!readFile.EndOfStream)
+                {
+                    int id = int.Parse(readFile.ReadLine());
+                    string itemname = readFile.ReadLine();
+                    string itemdescription = readFile.ReadLine();
+                    string healingvalue = readFile.ReadLine();
+                    string quantity = readFile.ReadLine();
+                    int price = int.Parse(readFile.ReadLine());
+
+                    IDA.Potion.Add(new Potions(id, itemname, itemdescription, healingvalue, quantity, price));
+                }
+            }
+
+            using (StreamReader readFile = File.OpenText(@"../../../GameWorld/TextFiles/Weapons.txt"))
+            {
+                while (!readFile.EndOfStream)
+                {
+                    int id = int.Parse(readFile.ReadLine());
+                    string itemname = readFile.ReadLine();
+                    string itemdescription = readFile.ReadLine();
+                    string size = readFile.ReadLine();
+                    string damage = readFile.ReadLine();
+                    int price = int.Parse(readFile.ReadLine());
+
+                    IDA.Weapon.Add(new Weapons(id,itemname, itemdescription, size, damage, price));
+                }
+            }
+
+            using (StreamReader readFile = File.OpenText(@"../../../GameWorld/TextFiles/Treasure.txt"))
+            {
+                while (!readFile.EndOfStream)
+                {
+                    int id = int.Parse(readFile.ReadLine());
+                    string itemname = readFile.ReadLine();
+                    string itemdescription = readFile.ReadLine();
+                    string rarity = readFile.ReadLine();
+                    string quantity = readFile.ReadLine();
+                    int price = int.Parse(readFile.ReadLine());
+
+                    IDA.Treasure.Add(new Treasure(id,itemname, itemdescription, rarity, quantity, price));
+                }
+
+
             }
         }
     }

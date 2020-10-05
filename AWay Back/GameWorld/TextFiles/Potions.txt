@@ -1,2 +1,2 @@
-990, Health Potion, Restores player's health by 100
-991, Stamina Potion, Restores player's stamina by 50 
+990, Health Potion, Restores player's health by 100, 100, 5, 25
+991, Stamina Potion, Restores player's stamina by 50 , 50, 5, 20
