@@ -20,6 +20,6 @@ namespace GameWorld
         public string Quantity { get; set; }
 
         public string Rarity { get; set; }
-        private int ID { get; set; }
+        public int ID { get; set; }
     }
 }

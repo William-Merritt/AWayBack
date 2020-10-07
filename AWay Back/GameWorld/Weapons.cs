@@ -18,7 +18,7 @@ namespace GameWorld
 
         public string Size { get; set; }
         public string Damage { get; set; }
-        private int ID { get; set; }
+        public int ID { get; set; }
 
     }
 }

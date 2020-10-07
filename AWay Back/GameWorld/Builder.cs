@@ -59,7 +59,7 @@ namespace GameWorld
                     string quantity = readFile.ReadLine();
                     int price = int.Parse(readFile.ReadLine());
 
-                    IDA.Item.Add(new Items(id,itemname, itemdescription, size, quantity, price));
+                    IDA.Item.Add(new Items(id, itemname, itemdescription, size, quantity, price));
 
                 }
             }
@@ -83,6 +83,7 @@ namespace GameWorld
             {
                 while (!readFile.EndOfStream)
                 {
+
                     int id = int.Parse(readFile.ReadLine());
                     string itemname = readFile.ReadLine();
                     string itemdescription = readFile.ReadLine();

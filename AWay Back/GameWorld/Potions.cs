@@ -16,6 +16,6 @@ namespace GameWorld
         }
         public string healingValue { get; set; }
         public string Quantity { get; set; }
-        private int ID { get; set; }
+        public int ID { get; set; }
     }
 }
