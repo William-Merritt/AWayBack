@@ -1,4 +1,24 @@
-401, Map, Shows the current layout of the land, 10, 1, 25
-402, Armor Sphere, Charges armor on use, 2, 5, 20
-403, Plasma Arrows, Must have Plasma Bow equipped to use, 3, 25, 8
-404, Proton Bullets, Must have Proton Pistol equipped, 1, 25, 10
+401
+Map
+Shows the current layout of the land
+10
+1
+25
+402
+Armor Sphere
+Charges armor on use
+2
+5
+20
+403
+Plasma Arrows
+Must have Plasma Bow equipped to use
+3
+25
+8
+404
+Proton Bullets
+Must have Proton Pistol equipped
+1
+25
+10

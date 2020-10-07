@@ -50,17 +50,25 @@ namespace GameWorld
 
             using (StreamReader readFile = File.OpenText(@"../../../GameWorld/TextFiles/Items.txt"))
             {
-                while (!readFile.EndOfStream)
+                try
                 {
-                    int id = int.Parse(readFile.ReadLine());
-                    string itemname = readFile.ReadLine();
-                    string itemdescription = readFile.ReadLine();
-                    string size = readFile.ReadLine();
-                    string quantity = readFile.ReadLine();
-                    int price = int.Parse(readFile.ReadLine());
+                    while (!readFile.EndOfStream)
+                    {
+                        int id = int.Parse(readFile.ReadLine());
+                        string itemname = readFile.ReadLine();
+                        string itemdescription = readFile.ReadLine();
+                        string size = readFile.ReadLine();
+                        string quantity = readFile.ReadLine();
+                        int price = int.Parse(readFile.ReadLine());
 
-                    IDA.Item.Add(new Items(id,itemname, itemdescription, size, quantity, price));
+                        IDA.Item.Add(new Items(id, itemname, itemdescription, size, quantity, price));
 
+                    }
+                }
+                catch (Exception ex)
+                {
+                    Console.WriteLine(ex);
+                    Console.ReadLine();
                 }
             }
 

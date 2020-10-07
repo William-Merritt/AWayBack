@@ -66,5 +66,10 @@ namespace GameWorld
                     "Must Contain at least one Punctuation Mark\n" +
                     "Please create a password for the player: ";
         }
+
+        public static string ReturningPlayer()
+        {
+            return "Are you a returning player (y/n)";
+        }
     }
 }
