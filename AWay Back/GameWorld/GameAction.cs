@@ -41,6 +41,10 @@ namespace GameWorld
             {
                 Battle.CommenceCombat(noun, Player._player);
             }
+            else if (verb == "admin")
+            {
+                Create.PromptForCreation();
+            }
             else 
             {
                 Console.WriteLine(StandardMessages.DisplayNumberError());
