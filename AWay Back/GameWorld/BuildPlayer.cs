@@ -32,8 +32,6 @@ namespace GameWorld
                 race = readFile.ReadLine();
                 readFile.Close();
 
-
-
                 if (password == returnpassword)
                 {
                     Player._player = new Player(name, playerClass, password, hp, race);

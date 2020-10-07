@@ -46,6 +46,11 @@ namespace ConsoleUI
                         break;
 
                     case "4":
+                        Console.WriteLine(StandardMessages.AdminCenter());
+                        Create.PromptForCreation();
+                        break;
+                    
+                    case "5":
                         //Exit the program --> Set the boolean variable to true and display goodbye message. 
                         Console.WriteLine(StandardMessages.DisplayGoodbye());
                         Console.ReadLine();

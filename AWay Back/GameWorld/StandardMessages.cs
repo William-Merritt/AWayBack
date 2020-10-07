@@ -8,7 +8,7 @@ namespace GameWorld
     {
         public static string DisplayMenu()
         {
-            return "1. Create Player\n2. Move Player\n3. Attack Enemy\n4. Exit Program\nPlease Enter A Choice: ";
+            return "1. Create Player\n2. Move Player\n3. Attack Enemy\n4. Admin Controls\n5. Exit Program\nPlease Enter A Choice: ";
         }
 
         public static string PromptForMovement() 
@@ -70,6 +70,11 @@ namespace GameWorld
         public static string ReturningPlayer()
         {
             return "Are you a returning player (y/n)";
+        }
+
+        public static string AdminCenter() 
+        {
+            return "Now using admin controls.";
         }
     }
 }
