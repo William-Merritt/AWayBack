@@ -79,5 +79,11 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\GameWorld\GameWorld.csproj">
+      <Project>{5bbb4f7d-ed76-4ce5-b0b1-6714315119f7}</Project>
+      <Name>GameWorld</Name>
+    </ProjectReference>
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
