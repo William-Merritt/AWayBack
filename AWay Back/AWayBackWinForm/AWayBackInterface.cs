@@ -19,6 +19,7 @@ namespace AWayBackWinForm
             InitializeComponent();
             Builder.Build();
             Movement.MoveToStart();
+            _player = new Player("Thor", "Trapper", "Monster1.", 150, "Human");
 
         }
 
@@ -26,7 +27,8 @@ namespace AWayBackWinForm
         private void moveNorthButton_Click(object sender, EventArgs e)
         {
             Movement.PlayerMovement("north");
-            roomDescRichTextBox.Text = Player.CurrentRoom.Description;
+            roomDescRichTextBox.Text = Player.CurrentRoom.RoomName + Environment.NewLine;
+            roomDescRichTextBox.Text += Player.CurrentRoom.Description;
             if (Player.CurrentRoom.ExitNorth != -1)
             {
                 Movement.MovePlayer(IDA.Room[Player.CurrentRoom.ExitNorth]);
@@ -44,6 +46,8 @@ namespace AWayBackWinForm
         {
             Movement.PlayerMovement("west");
             roomDescRichTextBox.Text = Player.CurrentRoom.Description;
+            roomDescRichTextBox.Text = Player.CurrentRoom.RoomName + Environment.NewLine;
+            roomDescRichTextBox.Text += Player.CurrentRoom.Description;
             if (Player.CurrentRoom.ExitWest != -1)
             {
                 Movement.MovePlayer(IDA.Room[Player.CurrentRoom.ExitWest]);
@@ -61,7 +65,8 @@ namespace AWayBackWinForm
         {
             Movement.PlayerMovement("east");
             roomDescRichTextBox.Text = Player.CurrentRoom.Description;
-
+            roomDescRichTextBox.Text = Player.CurrentRoom.RoomName + Environment.NewLine;
+            roomDescRichTextBox.Text += Player.CurrentRoom.Description;
             if (Player.CurrentRoom.ExitEast != -1)
             {
                 Movement.MovePlayer(IDA.Room[Player.CurrentRoom.ExitEast]);
@@ -78,6 +83,8 @@ namespace AWayBackWinForm
         {
             Movement.PlayerMovement("south");
             roomDescRichTextBox.Text = Player.CurrentRoom.Description;
+            roomDescRichTextBox.Text = Player.CurrentRoom.RoomName + Environment.NewLine;
+            roomDescRichTextBox.Text += Player.CurrentRoom.Description;
             if (Player.CurrentRoom.ExitSouth != -1)
             {
                 Movement.MovePlayer(IDA.Room[Player.CurrentRoom.ExitSouth]);
@@ -92,8 +99,7 @@ namespace AWayBackWinForm
 
         private void combatButton_Click(object sender, EventArgs e)
         {
-            Battle.CommenceCombat("attack", _player);
-
+            combatRichTextBox.Text = Battle.CommenceCombat("attack", _player);
         }
     }
 }

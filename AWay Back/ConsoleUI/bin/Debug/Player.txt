@@ -2,3 +2,7 @@ Monster1.
 thro
 trapper
 elf
+Monster1.
+Thor
+Marksman
+Dwarf
