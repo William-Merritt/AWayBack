@@ -1,4 +1,4 @@
-Monster1.
-thro
-trapper
-elf
+Monster.1
+chry
+Marksman
+Human
