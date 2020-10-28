@@ -29,17 +29,20 @@ namespace AWayBackWPFUI
 
         private void westButton_Click(object sender, RoutedEventArgs e)
         {
-
+            Movement.PlayerMovement("west");
+            CurrentRoomTextBlock.Text = Player.CurrentRoom.RoomName;
         }
 
         private void eastButton_Click(object sender, RoutedEventArgs e)
         {
-
+            Movement.PlayerMovement("east");
+            CurrentRoomTextBlock.Text = Player.CurrentRoom.RoomName;
         }
 
         private void southButton_Click(object sender, RoutedEventArgs e)
         {
-
+            Movement.PlayerMovement("south");
+            CurrentRoomTextBlock.Text = Player.CurrentRoom.RoomName;
         }
 
         private void northButton_Click(object sender, RoutedEventArgs e)
