@@ -10,7 +10,6 @@ using System.Windows.Documents;
 using System.Windows.Input;
 using System.Windows.Media;
 using System.Windows.Media.Imaging;
-using System.Windows.Navigation;
 using System.Windows.Shapes;
 
 namespace AWayBackWPFUI
@@ -25,51 +24,37 @@ namespace AWayBackWPFUI
             InitializeComponent();
         }
 
-        private void Button_Click(object sender, RoutedEventArgs e)
+        private void attackButton_Click(object sender, RoutedEventArgs e)
         {
 
         }
 
-        
-
-        private void ButtonClick_West(object sender, RoutedEventArgs e)
+        private void scanButton_Click(object sender, RoutedEventArgs e)
         {
 
         }
 
-        private void ButtonClick_East(object sender, RoutedEventArgs e)
+        private void lookButton_Click(object sender, RoutedEventArgs e)
         {
 
         }
 
-        private void ButtonClick_South(object sender, RoutedEventArgs e)
+        private void northButton_Click(object sender, RoutedEventArgs e)
         {
 
         }
 
-
-        
-
-        private void ButtonClick_Scan(object sender, RoutedEventArgs e)
+        private void eastButton_Click(object sender, RoutedEventArgs e)
         {
 
         }
 
-    
-
-        private void ButtonClick_Look(object sender, RoutedEventArgs e)
+        private void westButton_Click(object sender, RoutedEventArgs e)
         {
 
         }
 
-
-        private void ButtonClick_North(object sender, RoutedEventArgs e)
-        {
-
-        }
-
-
-        private void ButtonClick_Attack(object sender, RoutedEventArgs e)
+        private void southButton_Click(object sender, RoutedEventArgs e)
         {
 
         }
