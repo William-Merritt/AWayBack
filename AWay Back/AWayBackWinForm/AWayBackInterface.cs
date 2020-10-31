@@ -13,93 +13,51 @@ namespace AWayBackWinForm
 {
     public partial class AWayBackInterface : Form
     {
-        private Player _player;
         public AWayBackInterface()
         {
             InitializeComponent();
             Builder.Build();
             Movement.MoveToStart();
-            _player = new Player("Thor", "Trapper", "Monster1.", 150, "Human");
-
         }
 
 
         private void moveNorthButton_Click(object sender, EventArgs e)
         {
-            Movement.PlayerMovement("north");
+            NextArea.MoveTo("north");
             roomDescRichTextBox.Text = Player.CurrentRoom.RoomName + Environment.NewLine;
             roomDescRichTextBox.Text += Player.CurrentRoom.Description;
-            if (Player.CurrentRoom.ExitNorth != -1)
-            {
-                Movement.MovePlayer(IDA.Room[Player.CurrentRoom.ExitNorth]);
-                DisplayCurrentRoom.CurrentRoom();
-                Console.ReadLine();
-            }
-            else
-            {
-                Movement.moveHere = false;
-            }
-
         }
 
         private void moveWestButton_Click(object sender, EventArgs e)
         {
-            Movement.PlayerMovement("west");
-            roomDescRichTextBox.Text = Player.CurrentRoom.Description;
+            NextArea.MoveTo("west");
             roomDescRichTextBox.Text = Player.CurrentRoom.RoomName + Environment.NewLine;
             roomDescRichTextBox.Text += Player.CurrentRoom.Description;
-            if (Player.CurrentRoom.ExitWest != -1)
-            {
-                Movement.MovePlayer(IDA.Room[Player.CurrentRoom.ExitWest]);
-                DisplayCurrentRoom.CurrentRoom();
-                Console.ReadLine();
-            }
-            else
-            {
-                Movement.moveHere = false;
-            }
 
         }
 
         private void moveEastButton_Click(object sender, EventArgs e) 
         {
-            Movement.PlayerMovement("east");
-            roomDescRichTextBox.Text = Player.CurrentRoom.Description;
+            NextArea.MoveTo("east");
             roomDescRichTextBox.Text = Player.CurrentRoom.RoomName + Environment.NewLine;
             roomDescRichTextBox.Text += Player.CurrentRoom.Description;
-            if (Player.CurrentRoom.ExitEast != -1)
-            {
-                Movement.MovePlayer(IDA.Room[Player.CurrentRoom.ExitEast]);
-                DisplayCurrentRoom.CurrentRoom();
-                Console.ReadLine();
-            }
-            else
-            {
-                Movement.moveHere = false;
-            }
         }
 
         private void moveSouthButton_Click(object sender, EventArgs e)
         {
-            Movement.PlayerMovement("south");
-            roomDescRichTextBox.Text = Player.CurrentRoom.Description;
+            NextArea.MoveTo("south");
             roomDescRichTextBox.Text = Player.CurrentRoom.RoomName + Environment.NewLine;
             roomDescRichTextBox.Text += Player.CurrentRoom.Description;
-            if (Player.CurrentRoom.ExitSouth != -1)
-            {
-                Movement.MovePlayer(IDA.Room[Player.CurrentRoom.ExitSouth]);
-                DisplayCurrentRoom.CurrentRoom();
-                Console.ReadLine();
-            }
-            else
-            {
-                Movement.moveHere = false;
-            }
         }
 
         private void combatButton_Click(object sender, EventArgs e)
         {
-            combatRichTextBox.Text = Battle.CommenceCombat("attack", _player);
+            
+        }
+
+        private void lookButton_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

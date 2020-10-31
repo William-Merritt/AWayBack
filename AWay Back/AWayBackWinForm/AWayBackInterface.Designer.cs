@@ -74,6 +74,7 @@
             this.lookButton.TabIndex = 5;
             this.lookButton.Text = "Look";
             this.lookButton.UseVisualStyleBackColor = true;
+            this.lookButton.Click += new System.EventHandler(this.lookButton_Click);
             // 
             // scanButton
             // 

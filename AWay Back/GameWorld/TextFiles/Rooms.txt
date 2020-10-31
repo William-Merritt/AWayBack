@@ -13,7 +13,7 @@ A Dark cave with a pitch black on the left and a feint glow on the right
 3
 0
 1
--1
+1
 103
 StarCraft StorageRoom
 The back of a strange spacecraft
