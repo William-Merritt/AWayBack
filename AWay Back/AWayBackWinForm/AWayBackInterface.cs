@@ -13,6 +13,7 @@ namespace AWayBackWinForm
 {
     public partial class AWayBackInterface : Form
     {
+        private Player _player = new Player("Thor","Trapper", "Monster1.", 100, "Elf");
         public AWayBackInterface()
         {
             InitializeComponent();
@@ -52,7 +53,8 @@ namespace AWayBackWinForm
 
         private void combatButton_Click(object sender, EventArgs e)
         {
-            
+            Battle.CommenceCombat("attack", _player);
+            combatRichTextBox.Text = $"Player health after combat is --> {_player.Health}";
         }
 
         private void lookButton_Click(object sender, EventArgs e)
