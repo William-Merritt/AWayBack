@@ -1,0 +1,12 @@
+C:\Users\The King\Documents\GitHub\AWayBack\AWay Back\AWayBackWinForm\obj\Debug\AWayBackWinForm.csprojAssemblyReference.cache
+C:\Users\The King\Documents\GitHub\AWayBack\AWay Back\AWayBackWinForm\obj\Debug\AWayBackWinForm.AWayBackInterface.resources
+C:\Users\The King\Documents\GitHub\AWayBack\AWay Back\AWayBackWinForm\obj\Debug\AWayBackWinForm.Properties.Resources.resources
+C:\Users\The King\Documents\GitHub\AWayBack\AWay Back\AWayBackWinForm\obj\Debug\AWayBackWinForm.csproj.GenerateResource.cache
+C:\Users\The King\Documents\GitHub\AWayBack\AWay Back\AWayBackWinForm\bin\Debug\AWayBackWinForm.exe.config
+C:\Users\The King\Documents\GitHub\AWayBack\AWay Back\AWayBackWinForm\bin\Debug\AWayBackWinForm.exe
+C:\Users\The King\Documents\GitHub\AWayBack\AWay Back\AWayBackWinForm\bin\Debug\AWayBackWinForm.pdb
+C:\Users\The King\Documents\GitHub\AWayBack\AWay Back\AWayBackWinForm\bin\Debug\GameWorld.dll
+C:\Users\The King\Documents\GitHub\AWayBack\AWay Back\AWayBackWinForm\bin\Debug\GameWorld.pdb
+C:\Users\The King\Documents\GitHub\AWayBack\AWay Back\AWayBackWinForm\obj\Debug\AWayBackWinForm.csproj.CopyComplete
+C:\Users\The King\Documents\GitHub\AWayBack\AWay Back\AWayBackWinForm\obj\Debug\AWayBackWinForm.exe
+C:\Users\The King\Documents\GitHub\AWayBack\AWay Back\AWayBackWinForm\obj\Debug\AWayBackWinForm.pdb

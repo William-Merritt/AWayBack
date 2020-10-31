@@ -1,4 +1,15 @@
+<<<<<<< HEAD
 Monster.1
 chry
 Marksman
 Human
+=======
+Monster1.
+thro
+trapper
+elf
+Monster1.
+Thor
+Marksman
+Dwarf
+>>>>>>> Will_Version_2

@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using GameWorld;
 
 namespace AWayBackWinForm
 {
@@ -15,9 +16,46 @@ namespace AWayBackWinForm
         public AWayBackInterface()
         {
             InitializeComponent();
+            Builder.Build();
+            Movement.MoveToStart();
         }
 
-        private void richTextBox2_TextChanged(object sender, EventArgs e)
+
+        private void moveNorthButton_Click(object sender, EventArgs e)
+        {
+            NextArea.MoveTo("north");
+            roomDescRichTextBox.Text = Player.CurrentRoom.RoomName + Environment.NewLine;
+            roomDescRichTextBox.Text += Player.CurrentRoom.Description;
+        }
+
+        private void moveWestButton_Click(object sender, EventArgs e)
+        {
+            NextArea.MoveTo("west");
+            roomDescRichTextBox.Text = Player.CurrentRoom.RoomName + Environment.NewLine;
+            roomDescRichTextBox.Text += Player.CurrentRoom.Description;
+
+        }
+
+        private void moveEastButton_Click(object sender, EventArgs e) 
+        {
+            NextArea.MoveTo("east");
+            roomDescRichTextBox.Text = Player.CurrentRoom.RoomName + Environment.NewLine;
+            roomDescRichTextBox.Text += Player.CurrentRoom.Description;
+        }
+
+        private void moveSouthButton_Click(object sender, EventArgs e)
+        {
+            NextArea.MoveTo("south");
+            roomDescRichTextBox.Text = Player.CurrentRoom.RoomName + Environment.NewLine;
+            roomDescRichTextBox.Text += Player.CurrentRoom.Description;
+        }
+
+        private void combatButton_Click(object sender, EventArgs e)
+        {
+            
+        }
+
+        private void lookButton_Click(object sender, EventArgs e)
         {
 
         }
