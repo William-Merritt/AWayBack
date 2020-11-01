@@ -13,13 +13,16 @@ namespace AWayBackWinForm
 {
     public partial class AWayBackInterface : Form
     {
-        private Player _player = new Player("Thor","Trapper", "Monster1.", 100, "Elf");
+
+        public Player player = new Player("Thor", "Trapper", "Monster1.", 100, "Elf");
+        public Mobs mob = new Mobs(4, "Slasher", "Agile mob. Dangerous to get close", "poison", "blast", 150, "Demon");
+
         public AWayBackInterface()
         {
             InitializeComponent();
             Builder.Build();
             Movement.MoveToStart();
-        }
+    }
 
 
         private void moveNorthButton_Click(object sender, EventArgs e)
@@ -53,13 +56,14 @@ namespace AWayBackWinForm
 
         private void combatButton_Click(object sender, EventArgs e)
         {
-            Battle.CommenceCombat("attack", _player);
-            combatRichTextBox.Text = $"Player health after combat is --> {_player.Health}";
+            Battle.CommenceCombat("attack", player);
+            combatRichTextBox.Text = $"Player health after combat is --> {player.Health}";
         }
 
         private void lookButton_Click(object sender, EventArgs e)
         {
-
+            Look.lookForVerb("look");
+            enviromentRichTextBox.Text = Look.MobFound(mob);
         }
     }
 }
