@@ -29,7 +29,7 @@ namespace GameWorld
             Name = name;
             PlayerClass = playerClass;
             Password = _password;
-            CurrentRoom = IDA.Room[0];
+            //CurrentRoom = IDA.Room[0];
         }
 
         //Properties
