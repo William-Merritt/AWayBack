@@ -52,10 +52,19 @@
     <Compile Include="AWayBackInterface.Designer.cs">
       <DependentUpon>AWayBackInterface.cs</DependentUpon>
     </Compile>
+    <Compile Include="CreatePlayer.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CreatePlayer.Designer.cs">
+      <DependentUpon>CreatePlayer.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="AWayBackInterface.resx">
       <DependentUpon>AWayBackInterface.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CreatePlayer.resx">
+      <DependentUpon>CreatePlayer.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -80,6 +89,10 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\ConsoleUI\ConsoleUI.csproj">
+      <Project>{0379896d-f5a9-4e1b-b48f-34c78e1ac391}</Project>
+      <Name>ConsoleUI</Name>
+    </ProjectReference>
     <ProjectReference Include="..\GameWorld\GameWorld.csproj">
       <Project>{5bbb4f7d-ed76-4ce5-b0b1-6714315119f7}</Project>
       <Name>GameWorld</Name>

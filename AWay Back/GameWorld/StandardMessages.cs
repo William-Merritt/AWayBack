@@ -37,12 +37,17 @@ namespace GameWorld
 
         public static string GetFirstName()
         {
-            return "What is your character's first name?";
+            return "What is your character's username --->";
         }
 
-        public static string GetLastName()
+        public static string GetPlayerClass()
         {
-            return "What is your character's last name?";
+            return "What is your character's class --->";
+        }
+
+        public static string GetPlayerRace() 
+        {
+            return "What is your character's race --->";
         }
 
         public static void CleaningCode()

@@ -1,28 +1,27 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\merrittw1813\\Documents\\GitHub\\AWayBack\\AWay Back\\GameWorld\\GameWorld.csproj": {}
+    "C:\\Users\\The King\\Documents\\GitHub\\AWayBack\\AWay Back\\GameWorld\\GameWorld.csproj": {}
   },
   "projects": {
-    "C:\\Users\\merrittw1813\\Documents\\GitHub\\AWayBack\\AWay Back\\GameWorld\\GameWorld.csproj": {
+    "C:\\Users\\The King\\Documents\\GitHub\\AWayBack\\AWay Back\\GameWorld\\GameWorld.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\merrittw1813\\Documents\\GitHub\\AWayBack\\AWay Back\\GameWorld\\GameWorld.csproj",
+        "projectUniqueName": "C:\\Users\\The King\\Documents\\GitHub\\AWayBack\\AWay Back\\GameWorld\\GameWorld.csproj",
         "projectName": "GameWorld",
-        "projectPath": "C:\\Users\\merrittw1813\\Documents\\GitHub\\AWayBack\\AWay Back\\GameWorld\\GameWorld.csproj",
-        "packagesPath": "C:\\Users\\merrittw1813\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\merrittw1813\\Documents\\GitHub\\AWayBack\\AWay Back\\GameWorld\\obj\\",
+        "projectPath": "C:\\Users\\The King\\Documents\\GitHub\\AWayBack\\AWay Back\\GameWorld\\GameWorld.csproj",
+        "packagesPath": "C:\\Users\\The King\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\The King\\Documents\\GitHub\\AWayBack\\AWay Back\\GameWorld\\obj\\",
         "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
-        ],
         "configFilePaths": [
-          "C:\\Users\\merrittw1813\\AppData\\Roaming\\NuGet\\NuGet.Config"
+          "C:\\Users\\The King\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
           "netstandard2.0"
         ],
         "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -56,7 +55,7 @@
           ],
           "assetTargetFallback": true,
           "warn": true,
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.0.100\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.101\\RuntimeIdentifierGraph.json"
         }
       }
     }
