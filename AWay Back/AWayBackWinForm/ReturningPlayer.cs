@@ -10,23 +10,21 @@ using System.Windows.Forms;
 
 namespace AWayBackWinForm
 {
-    public partial class CreatePlayer : Form
+    public partial class ReturningPlayer : Form
     {
-        public CreatePlayer()
+        public ReturningPlayer()
         {
             InitializeComponent();
         }
 
-
-
-        private void btnSubmit_Click(object sender, EventArgs e)
+        private void btnYes_Click(object sender, EventArgs e)
         {
 
         }
 
-        private void CreatePlayer_Load(object sender, EventArgs e)
+        private void btnNo_Click(object sender, EventArgs e)
         {
-           
+
         }
     }
 }
