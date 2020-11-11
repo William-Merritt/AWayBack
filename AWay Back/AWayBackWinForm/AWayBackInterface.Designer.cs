@@ -93,6 +93,7 @@
             this.moveEastButton.TabIndex = 3;
             this.moveEastButton.Text = "Go East";
             this.moveEastButton.UseVisualStyleBackColor = true;
+            this.moveEastButton.Click += new System.EventHandler(this.moveEastButton_Click);
             // 
             // moveSouthButton
             // 

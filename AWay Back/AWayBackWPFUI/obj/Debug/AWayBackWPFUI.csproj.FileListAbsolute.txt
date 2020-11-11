@@ -38,3 +38,25 @@ C:\Users\The King\Documents\GitHub\AWayBack\AWay Back\AWayBackWPFUI\obj\Debug\AW
 C:\Users\The King\Documents\GitHub\AWayBack\AWay Back\AWayBackWPFUI\bin\Debug\ConsoleUI.exe
 C:\Users\The King\Documents\GitHub\AWayBack\AWay Back\AWayBackWPFUI\bin\Debug\ConsoleUI.pdb
 C:\Users\The King\Documents\GitHub\AWayBack\AWay Back\AWayBackWPFUI\bin\Debug\ConsoleUI.exe.config
+C:\Users\merrittw1813\Documents\GitHub\AWayBack\AWay Back\AWayBackWPFUI\bin\Debug\AWayBackWPFUI.exe.config
+C:\Users\merrittw1813\Documents\GitHub\AWayBack\AWay Back\AWayBackWPFUI\bin\Debug\AWayBackWPFUI.exe
+C:\Users\merrittw1813\Documents\GitHub\AWayBack\AWay Back\AWayBackWPFUI\bin\Debug\AWayBackWPFUI.pdb
+C:\Users\merrittw1813\Documents\GitHub\AWayBack\AWay Back\AWayBackWPFUI\bin\Debug\ConsoleUI.exe
+C:\Users\merrittw1813\Documents\GitHub\AWayBack\AWay Back\AWayBackWPFUI\bin\Debug\GameWorld.dll
+C:\Users\merrittw1813\Documents\GitHub\AWayBack\AWay Back\AWayBackWPFUI\bin\Debug\ConsoleUI.pdb
+C:\Users\merrittw1813\Documents\GitHub\AWayBack\AWay Back\AWayBackWPFUI\bin\Debug\ConsoleUI.exe.config
+C:\Users\merrittw1813\Documents\GitHub\AWayBack\AWay Back\AWayBackWPFUI\bin\Debug\GameWorld.pdb
+C:\Users\merrittw1813\Documents\GitHub\AWayBack\AWay Back\AWayBackWPFUI\obj\Debug\AWayBackWPFUI.csprojAssemblyReference.cache
+C:\Users\merrittw1813\Documents\GitHub\AWayBack\AWay Back\AWayBackWPFUI\obj\Debug\AWayBack.g.cs
+C:\Users\merrittw1813\Documents\GitHub\AWayBack\AWay Back\AWayBackWPFUI\obj\Debug\MainWindow.g.cs
+C:\Users\merrittw1813\Documents\GitHub\AWayBack\AWay Back\AWayBackWPFUI\obj\Debug\App.g.cs
+C:\Users\merrittw1813\Documents\GitHub\AWayBack\AWay Back\AWayBackWPFUI\obj\Debug\AWayBackWPFUI_MarkupCompile.cache
+C:\Users\merrittw1813\Documents\GitHub\AWayBack\AWay Back\AWayBackWPFUI\obj\Debug\AWayBackWPFUI_MarkupCompile.lref
+C:\Users\merrittw1813\Documents\GitHub\AWayBack\AWay Back\AWayBackWPFUI\obj\Debug\AWayBack.baml
+C:\Users\merrittw1813\Documents\GitHub\AWayBack\AWay Back\AWayBackWPFUI\obj\Debug\MainWindow.baml
+C:\Users\merrittw1813\Documents\GitHub\AWayBack\AWay Back\AWayBackWPFUI\obj\Debug\AWayBackWPFUI.g.resources
+C:\Users\merrittw1813\Documents\GitHub\AWayBack\AWay Back\AWayBackWPFUI\obj\Debug\AWayBackWPFUI.Properties.Resources.resources
+C:\Users\merrittw1813\Documents\GitHub\AWayBack\AWay Back\AWayBackWPFUI\obj\Debug\AWayBackWPFUI.csproj.GenerateResource.cache
+C:\Users\merrittw1813\Documents\GitHub\AWayBack\AWay Back\AWayBackWPFUI\obj\Debug\AWayBackWPFUI.csproj.CopyComplete
+C:\Users\merrittw1813\Documents\GitHub\AWayBack\AWay Back\AWayBackWPFUI\obj\Debug\AWayBackWPFUI.exe
+C:\Users\merrittw1813\Documents\GitHub\AWayBack\AWay Back\AWayBackWPFUI\obj\Debug\AWayBackWPFUI.pdb
