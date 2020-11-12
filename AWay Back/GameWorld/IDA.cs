@@ -23,7 +23,7 @@ namespace GameWorld
 
         public static Items ItemByName(string name) 
         {
-            return Item.SingleOrDefault(x => x.itemName == name);
+            return Item.SingleOrDefault(x => x.ItemName == name);
         }
 
         public static Rooms FindID(int id)

@@ -16,6 +16,7 @@ namespace AWayBackWinForm
 
         public Player player = new Player("Thor", "Trapper", "Monster1.", 100, "Elf");
         public Mobs mob = new Mobs(4, "Slasher", "Agile mob. Dangerous to get close", "poison", "blast", 150, "Demon");
+        public Items item = new Items(405, "Radio", "Device can be used for communitcation", "2", 25);
 
         public AWayBackInterface()
         {
@@ -64,6 +65,12 @@ namespace AWayBackWinForm
         {
             Look.lookForVerb("look");
             enviromentRichTextBox.Text = Look.MobFound(mob);
+        }
+
+        private void btnCheckInventory_Click(object sender, EventArgs e)
+        {
+            inventoryRichTextBox.Text = item.ItemName + Environment.NewLine;
+            inventoryRichTextBox.Text += item.ItemDescription + Environment.NewLine;
         }
     }
 }

@@ -30,7 +30,6 @@
         {
             this.playerControlsGroupBox = new System.Windows.Forms.GroupBox();
             this.lookButton = new System.Windows.Forms.Button();
-            this.scanButton = new System.Windows.Forms.Button();
             this.moveEastButton = new System.Windows.Forms.Button();
             this.moveSouthButton = new System.Windows.Forms.Button();
             this.moveWestButton = new System.Windows.Forms.Button();
@@ -44,6 +43,7 @@
             this.combatButton = new System.Windows.Forms.Button();
             this.enviromentGroupBox = new System.Windows.Forms.GroupBox();
             this.enviromentRichTextBox = new System.Windows.Forms.RichTextBox();
+            this.btnCheckInventory = new System.Windows.Forms.Button();
             this.playerControlsGroupBox.SuspendLayout();
             this.currentRoomGroupBox.SuspendLayout();
             this.inventoryGroupBox.SuspendLayout();
@@ -54,7 +54,6 @@
             // playerControlsGroupBox
             // 
             this.playerControlsGroupBox.Controls.Add(this.lookButton);
-            this.playerControlsGroupBox.Controls.Add(this.scanButton);
             this.playerControlsGroupBox.Controls.Add(this.moveEastButton);
             this.playerControlsGroupBox.Controls.Add(this.moveSouthButton);
             this.playerControlsGroupBox.Controls.Add(this.moveWestButton);
@@ -68,22 +67,13 @@
             // 
             // lookButton
             // 
-            this.lookButton.Location = new System.Drawing.Point(175, 141);
+            this.lookButton.Location = new System.Drawing.Point(6, 141);
             this.lookButton.Name = "lookButton";
-            this.lookButton.Size = new System.Drawing.Size(75, 23);
+            this.lookButton.Size = new System.Drawing.Size(244, 23);
             this.lookButton.TabIndex = 5;
             this.lookButton.Text = "Look";
             this.lookButton.UseVisualStyleBackColor = true;
             this.lookButton.Click += new System.EventHandler(this.lookButton_Click);
-            // 
-            // scanButton
-            // 
-            this.scanButton.Location = new System.Drawing.Point(7, 141);
-            this.scanButton.Name = "scanButton";
-            this.scanButton.Size = new System.Drawing.Size(75, 23);
-            this.scanButton.TabIndex = 4;
-            this.scanButton.Text = "Scan";
-            this.scanButton.UseVisualStyleBackColor = true;
             // 
             // moveEastButton
             // 
@@ -145,6 +135,7 @@
             // 
             // inventoryGroupBox
             // 
+            this.inventoryGroupBox.Controls.Add(this.btnCheckInventory);
             this.inventoryGroupBox.Controls.Add(this.inventoryRichTextBox);
             this.inventoryGroupBox.Location = new System.Drawing.Point(12, 209);
             this.inventoryGroupBox.Name = "inventoryGroupBox";
@@ -157,7 +148,7 @@
             // 
             this.inventoryRichTextBox.Location = new System.Drawing.Point(7, 20);
             this.inventoryRichTextBox.Name = "inventoryRichTextBox";
-            this.inventoryRichTextBox.Size = new System.Drawing.Size(220, 273);
+            this.inventoryRichTextBox.Size = new System.Drawing.Size(220, 250);
             this.inventoryRichTextBox.TabIndex = 0;
             this.inventoryRichTextBox.Text = "";
             // 
@@ -208,6 +199,16 @@
             this.enviromentRichTextBox.TabIndex = 0;
             this.enviromentRichTextBox.Text = "";
             // 
+            // btnCheckInventory
+            // 
+            this.btnCheckInventory.Location = new System.Drawing.Point(79, 276);
+            this.btnCheckInventory.Name = "btnCheckInventory";
+            this.btnCheckInventory.Size = new System.Drawing.Size(75, 23);
+            this.btnCheckInventory.TabIndex = 1;
+            this.btnCheckInventory.Text = "Check";
+            this.btnCheckInventory.UseVisualStyleBackColor = true;
+            this.btnCheckInventory.Click += new System.EventHandler(this.btnCheckInventory_Click);
+            // 
             // AWayBackInterface
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -235,7 +236,6 @@
         private System.Windows.Forms.GroupBox currentRoomGroupBox;
         private System.Windows.Forms.RichTextBox roomDescRichTextBox;
         private System.Windows.Forms.Button lookButton;
-        private System.Windows.Forms.Button scanButton;
         private System.Windows.Forms.Button moveEastButton;
         private System.Windows.Forms.Button moveSouthButton;
         private System.Windows.Forms.Button moveWestButton;
@@ -247,5 +247,6 @@
         private System.Windows.Forms.Button combatButton;
         private System.Windows.Forms.GroupBox enviromentGroupBox;
         private System.Windows.Forms.RichTextBox enviromentRichTextBox;
+        private System.Windows.Forms.Button btnCheckInventory;
     }
 }

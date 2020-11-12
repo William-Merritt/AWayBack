@@ -10,15 +10,26 @@ namespace GameWorld
         // Fields
         private Items _newItem;
         private int _quantity;
+        private int _price;
         // Constructors
+        public Inventory_Item(Items newItem, int quantity) 
+        {
+            NewItem = newItem;
+            Quantity = quantity;
+        }
 
         // Properties
-        public Items newItem { get { return _newItem; } set { _newItem = value;}}
+        public Items NewItem { get { return _newItem; } set { _newItem = value;}}
 
         public int Quantity { get { return _quantity; } set { _quantity = value;} }
 
-        public int ItemID { get { return newItem.ID; } }
+        public int ItemID { get { return NewItem.ID; } }
 
-        public string Description { get { return Quantity > 1 ? newItem.} }
+        public string Description { get { return Quantity > 1 ? NewItem.ItemName; } }
+
+        public int Price { get { return NewItem.Price; } }
+
+
+
     }
 }
