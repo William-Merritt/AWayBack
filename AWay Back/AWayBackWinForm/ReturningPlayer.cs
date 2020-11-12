@@ -24,7 +24,14 @@ namespace AWayBackWinForm
 
         private void btnNo_Click(object sender, EventArgs e)
         {
-
+            //Creating a new instance of the awaybackinterface form
+            AWayBackInterface awayBack = new AWayBackInterface();
+            
+            //Calling the new instance and showing the form
+            awayBack.ShowDialog();
+            
+            //Closing the returning player form
+            this.Close();
         }
     }
 }

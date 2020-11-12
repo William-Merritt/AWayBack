@@ -16,6 +16,16 @@ namespace GameWorld
 
 
 
+        public static Items ItemByID(int id) 
+        {
+            return Item.SingleOrDefault(x => x.ID == id);
+        }
+
+        public static Items ItemByName(string name) 
+        {
+            return Item.SingleOrDefault(x => x.itemName == name);
+        }
+
         public static Rooms FindID(int id)
         {
             return Room.SingleOrDefault(x => x.ID == id);

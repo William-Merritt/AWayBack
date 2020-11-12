@@ -14,6 +14,8 @@ namespace GameWorld
         public static Player _player;
         private static Mobs _currentMob;     // To find the current mob in the room. 
 
+        List<Inventory_Item> Inventory { get; set; }
+
         // Constructor
         public Player()
         {
@@ -29,7 +31,7 @@ namespace GameWorld
             Name = name;
             PlayerClass = playerClass;
             Password = _password;
-            //CurrentRoom = IDA.Room[0];
+            Inventory = new List<Inventory_Item>();
         }
 
         //Properties
@@ -62,5 +64,16 @@ namespace GameWorld
         public static Rooms CurrentRoom { get { return _currentRoom; } set { _currentRoom = value; } }
 
         public static Mobs CurrentMob { get { return _currentMob; } set { _currentMob = value; } }
+
+        #region Inventory
+        public void AddItemToInventory(Items addItem, int quantity = 1) 
+        {
+            Inventory_Item item = Inventory.SingleOrDefault(items => item.);
+
+            if (item == null) 
+            { 
+
+            }
+        }
     }
 }

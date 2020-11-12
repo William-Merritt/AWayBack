@@ -5,31 +5,20 @@ using System.Text;
 namespace GameWorld
 {
     // class which weapon,item,treasure and potions inherit from
-    public class Inventory_Item
+    public class Inventory_Item 
     {
+        // Fields
+        private Items _newItem;
+        private int _quantity;
+        // Constructors
 
+        // Properties
+        public Items newItem { get { return _newItem; } set { _newItem = value;}}
 
-        public Inventory_Item()
-        {
-            itemName = " ";
-            itemDescription = " ";
-            Price = 0;
-        }
+        public int Quantity { get { return _quantity; } set { _quantity = value;} }
 
-        public Inventory_Item(string itemname, string itemdescription, int price)
-        {
-            itemName = itemname;
-            itemDescription = itemdescription;
-            Price = price;
+        public int ItemID { get { return newItem.ID; } }
 
-        }
-
-        public int Price { get; set; }
-        public string itemName { get; set; }
-        public string itemDescription { get; set; }
-
-
-
-
+        public string Description { get { return Quantity > 1 ? newItem.} }
     }
 }
