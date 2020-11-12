@@ -7,7 +7,6 @@ namespace GameWorld
     public class Weapons : Inventory_Item
     {
 
-
         public Weapons(int id, string itemname, string itemdescription, string size, string damage, int price)
             : base(itemname, itemdescription, price)
         {

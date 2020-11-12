@@ -7,8 +7,9 @@ namespace GameWorld
     public class Potions : Inventory_Item
     {
 
+
         public Potions(int id, string itemname, string itemdescription, string healingvalue, string quantitiy, int price)
-            : base(itemname, itemdescription, price)
+            :base(itemname, itemdescription, price)
         {
             healingValue = healingvalue;
             Quantity = quantitiy;

@@ -375,7 +375,7 @@ namespace GameWorld
                         Console.WriteLine("How muuch will this item sell for: ");
                         price = Convert.ToInt32(Console.ReadLine());
 
-                        IDA.Item.Add(new Items(id, itemName, itemDescription, size, quantity, price));
+                        IDA.Item.Add(new Items(id, itemName, itemDescription, size, price));
 
                         if (File.Exists(@"../../../GameWorld/TextFiles/Items.txt"))
                         {
@@ -438,7 +438,7 @@ namespace GameWorld
                         Console.WriteLine("How muuch will this potion sell for: ");
                         price = Convert.ToInt32(Console.ReadLine());
 
-                        IDA.Item.Add(new Items(id, itemName, itemDescription, healingValue, quantity, price));
+                        IDA.Item.Add(new Items(id, itemName, itemDescription, healingValue, price));
 
                         if (File.Exists(@"../../../GameWorld/TextFiles/Potions.txt"))
                         {

@@ -65,15 +65,14 @@ namespace GameWorld
 
         public static Mobs CurrentMob { get { return _currentMob; } set { _currentMob = value; } }
 
-        #region Inventory
-        public void AddItemToInventory(Items addItem, int quantity = 1) 
-        {
-            Inventory_Item item = Inventory.SingleOrDefault(items => item.);
+        //public void AddItemToInventory(Items addItem, int quantity = 1) 
+        //{
+        //    Inventory_Item item = Inventory.SingleOrDefault(items => item.);
 
-            if (item == null) 
-            { 
+        //    if (item == null) 
+        //    { 
 
-            }
-        }
+        //    }
+        //}
     }
 }

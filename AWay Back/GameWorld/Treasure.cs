@@ -9,7 +9,7 @@ namespace GameWorld
 
 
         public Treasure(int id, string itemname, string itemdescription, string rarity, string quantity, int price)
-            : base(itemname, itemdescription, price)
+            :base(itemname, itemdescription, price)
         {
             Rarity = rarity;
 

@@ -22,7 +22,7 @@ namespace AWayBackWPFUI
     {
         public Player player = new Player("Thor", "Trapper", "Monster1.", 100, "Elf");
         public Mobs mob = new Mobs(4, "Slasher", "Agile mob. Dangerous to get close", "poison", "blast", 150, "Demon");
-
+        public Items item = new Items(405, "Radio", "Device can be used for communitcation", "2", 25);
         public MainWindow()
         {
             InitializeComponent();
@@ -73,6 +73,12 @@ namespace AWayBackWPFUI
             NextArea.MoveTo("south");
             CurrentRoomTextBlock.Text = Player.CurrentRoom.RoomName + Environment.NewLine;
             CurrentRoomTextBlock.Text += Player.CurrentRoom.Description;
+        }
+
+        private void Check_Click(object sender, RoutedEventArgs e)
+        {
+            PlayerInventoryTextBlock.Text = item.ItemName + Environment.NewLine;
+            PlayerInventoryTextBlock.Text += item.ItemDescription + Environment.NewLine;
         }
     }
 }
